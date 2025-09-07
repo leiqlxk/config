@@ -32,115 +32,502 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港5|@stairnode
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
+- name: SSR-加拿大-79.127.233.170:989
+  type: ssr
+  server: 79.127.233.170
   port: 989
-  server: 185.153.197.5
+  password: f8f7aCzcPKbsF8p3
+  cipher: aes-256-cfb
+  protocol: origin
+  obfs: plain
+- name: IL_10169_0024
+  server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+  port: 443
+  type: vless
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: i2pd.website
+  reality-opts:
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  udp: true
+- name: IR_10169_0026
+  server: hybrid.arvancloud.online
+  port: 44443
+  type: vless
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.speedtest.net
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+  udp: true
+- name: '🇺🇲@FreakConfig #1'
+  password: miaoge110
+  port: 12687
+  server: 45.58.38.153
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 🇳🇱@FreakConfig
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+  password: Telegram-->@Ln2Ray
+  port: 45000
+  server: gavazn.lnmarketplace.net
+  skip-cert-verify: true
+  sni: gavazn.55994421.xyz
+  tls: false
+  type: hysteria2
+- name: LT-45.87.175.171-0283 | 2.324MB
+  server: 45.87.175.171
+  port: 8080
   type: ss
-- name: 🇰🇷KR-203.231.242.12-1061
-  server: kr2.qiangdong.xyz
-  port: 1052
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: uk_manchester
+  server: 141.98.101.179
+  port: 443
   type: ss
   cipher: aes-128-gcm
-  password: VXPipi29nxMO
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-- name: 🇺🇸US-15.197.162.184-2632
-  server: download2hkt.windowsupdate.lol
+  password: shadowsocks
+- name: 🇯🇵 japan
+  server: 149.22.87.240
   port: 443
-  type: trojan
-  password: 7778e684-f435-4166-bf9e-0256cb28bf10
-  skip-cert-verify: false
-- name: 🇺🇸US-15.197.162.184-3479
-  server: download2hkt.windowsupdate.lol
-  port: 443
-  type: trojan
-  password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
-  skip-cert-verify: false
-- name: 🇬🇷GR-192.71.166.102-3713
-  server: 192.71.166.102
-  port: 989
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇭🇰 香港家宽 06
-  server: xg1.xiaohuolongjc.top
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱[openproxylist.com] ss-NL
+  type: ss
+  server: 62.60.247.135
+  port: 19099
+  cipher: chacha20-ietf-poly1305
+  password: QGhzzq74w9OqfnJr0mZtDz
+  udp: true
+- name: 🇺🇸[openproxylist.com] ss-US
+  type: ss
+  server: 38.107.226.160
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 🇺🇸[openproxylist.com] vless-US-AGen
+  type: vless
+  server: 104.21.3.219
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  security: tls
+  tls: true
+  sni: ovhwuxian.pai50288.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
+- name: ❓_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6637353965303665
+  password: '123'
+  port: 1088
+  server: 154.219.96.212
+  type: http
+  username: '123'
+- name: 🇺🇸 美国 775
+  server: 104.18.2.108
+  port: 8443
+  client-fingerprint: chrome
+  type: trojan
+  password: slch2024
+  sni: ocost-dy.wmlefl.cc
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ocost-dy.wmlefl.cc
+- name: 🇺🇸 美国-拉斯维加斯-002
+  server: 45.144.174.211
+  port: 25151
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cc56929b-64a3-4c4d-84a6-6ce61c84646b
+  alterId: 0
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 台湾家宽 187
+  server: 36.232.126.82
+  port: 10135
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 38544173-8f44-4b7b-b8ae-02ad9b8df292
+  tfo: false
+- name: 🇹🇼 台湾 676
+  server: 1.165.109.34
+  port: 10014
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6b0b787f-a994-412a-8e80-74b286e80459
+  tfo: false
+- name: 🇹🇼 台湾 957
+  server: 36.235.4.185
+  port: 10091
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69a51e0a-bb70-47c3-be39-d8e27d809c16
+  tfo: false
+- name: 🇹🇼 台湾 849
+  server: 1.165.73.159
+  port: 10002
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾家宽 031
+  server: 114.35.114.182
+  port: 10129
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3c3e66d5-1910-4994-9425-737ec6092b78
+  tfo: false
+- name: 🇭🇰 香港 36
+  server: hg1.xiaohuolongjc.top
   port: 37771
   client-fingerprint: chrome
   type: hysteria2
-  password: c17080ce-a749-4672-904b-96793971f00a
-  auth: c17080ce-a749-4672-904b-96793971f00a
-  sni: xg1.xiaohuolongjc.top
+  password: 86d07617-6d2f-4aa4-84aa-aaeb53b321bc
+  auth: 86d07617-6d2f-4aa4-84aa-aaeb53b321bc
+  sni: hg1.xiaohuolongjc.top
   skip-cert-verify: true
-- name: 🇹🇼 台湾 18
-  server: 1.170.23.235
-  port: 10096
+- name: 🇹🇼 台湾家宽 044
+  server: 114.35.114.182
+  port: 10129
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
   tfo: false
-- name: 🇺🇸 美国 145
-  server: h23.cpddx.club
-  port: 8443
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 1c7e415a-ec17-476a-bc38-aac9162dcfce
-  auth: 1c7e415a-ec17-476a-bc38-aac9162dcfce
-  sni: h23.cpddx.club
-  skip-cert-verify: true
-- name: 🇹🇼 台湾 22
-  server: 114.46.69.142
-  port: 10078
+- name: 🇹🇼 台湾 811
+  server: 36.232.112.174
+  port: 10138
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 108a9ec7-e734-4120-a740-c252a0d0e258
+  password: 3be1ab87-2bc6-48e0-904e-4b3701c77950
   tfo: false
-- name: 🇹🇼 台湾家宽 491
+- name: 🇹🇼 台湾家宽 104
+  server: 118.170.216.104
+  port: 10031
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2f1935c3-0141-4c78-9f24-fe5cd6a1202d
+  tfo: false
+- name: 🇹🇼 台湾 356
+  server: 118.170.204.149
+  port: 10036
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f2fe2a0b-1263-4bcf-a792-db71fde6712c
+  tfo: false
+- name: 🇹🇼 台湾 246
+  server: 36.235.22.201
+  port: 10111
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 340fbd5e-82c0-4d5e-b799-b29ce87c4d4f
+  tfo: false
+- name: 🇹🇼 台湾 533
+  server: 36.234.88.212
+  port: 10048
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇹🇼 台湾家宽 010
+  server: 114.35.114.182
+  port: 10129
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9f549d30-becd-4a10-80a8-bcff368fb595
+  tfo: false
+- name: 🇹🇼 台湾 604
   server: 1.170.23.215
   port: 10109
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: a6b95ee6-1adf-47e5-8bd0-85b73584388e
+  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
   tfo: false
-- name: 🇹🇼 台湾家宽 768
-  server: 125.231.72.120
-  port: 10065
+- name: 45.11.1.62:50000
+  server: 45.11.1.62
+  port: 50000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
+  auth: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 485
+  server: 1.170.43.64
+  port: 10090
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: fa223c44-96a3-4f34-92ca-404f588cd223
+  password: 24d39bf1-a8d0-4f07-929a-bbbe15123846
   tfo: false
-- name: 🇹🇼 台湾家宽 711
+- name: 🇹🇼 台湾 585
+  server: 114.46.71.121
+  port: 10042
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾 346
+  server: 36.235.22.201
+  port: 10111
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3c3e66d5-1910-4994-9425-737ec6092b78
+  tfo: false
+- name: 🇹🇼 台湾 084
+  server: 1.170.43.64
+  port: 10090
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 54ee7c83-45dc-404d-8975-34fbcac92f87
+  tfo: false
+- name: 🇹🇼 台湾 386
+  server: 1.170.43.64
+  port: 10090
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8b66024-6718-418e-9823-0ea997a8d75f
+  tfo: false
+- name: 🇺🇸 美国 201
+  server: 6493f70c-t2cio0-t3rh3g-au6.la.shifen.uk
+  port: 1743
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  auth: 1b609740-eec2-11ef-8543-f23c93136cb3
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 363
+  server: 1.170.56.159
+  port: 10120
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d15235c9-49b1-461e-a782-beb01857634d
+  tfo: false
+- name: 🇹🇼 台湾 836
+  server: 1.165.109.34
+  port: 10014
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇹🇼 台湾 472
+  server: 125.229.191.101
+  port: 10007
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9f549d30-becd-4a10-80a8-bcff368fb595
+  tfo: false
+- name: 🇹🇼 台湾 435
+  server: 125.229.191.101
+  port: 10007
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b701b8e7-984a-4afa-aa86-0070181cd2dc
+  tfo: false
+- name: 🇹🇼 台湾 941
+  server: 36.234.72.84
+  port: 10067
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 340fbd5e-82c0-4d5e-b799-b29ce87c4d4f
+  tfo: false
+- name: 🇹🇼 台湾 884
+  server: 111.253.210.204
+  port: 10144
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3be1ab87-2bc6-48e0-904e-4b3701c77950
+  tfo: false
+- name: 🇹🇼 台湾 659
+  server: 118.170.216.104
+  port: 10031
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 38544173-8f44-4b7b-b8ae-02ad9b8df292
+  tfo: false
+- name: 🇹🇼 台湾 542
+  server: 1.170.11.24
+  port: 10085
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 01439d2f-31f8-45c8-bf77-8f9d45239864
+  tfo: false
+- name: 🇹🇼 台湾 902
+  server: 125.228.162.163
+  port: 10137
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8b66024-6718-418e-9823-0ea997a8d75f
+  tfo: false
+- name: 🇺🇸 美国 236
+  server: zula.ir
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: d8c37e7f-61d2-4a58-87c9-b8452155c207
+  tls: true
+  alpn:
+  - h2%2Chttp%2F1.1
+  tfo: false
+  skip-cert-verify: true
+  servername: rOk-CREator.PAgeS.dEv
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rOk-CREator.PAgeS.dEv
+- name: 🇹🇼 台湾 066
+  server: 125.228.162.163
+  port: 10137
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
+  tfo: false
+- name: 🇹🇼 台湾 959
+  server: 36.235.4.185
+  port: 10091
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d15235c9-49b1-461e-a782-beb01857634d
+  tfo: false
+- name: 🇹🇼 台湾 875
+  server: 118.170.216.104
+  port: 10031
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c8449ac9-14ff-42ca-b6cf-816d743fdd23
+  tfo: false
+- name: 🇹🇼 台湾 828
+  server: 1.170.2.19
+  port: 10083
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇺🇸 美国 193
+  server: 5649b636-t2cio0-t49cd4-4550.la.shifen.uk
+  port: 1743
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  auth: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 489
+  server: 111.253.207.240
+  port: 10098
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c8449ac9-14ff-42ca-b6cf-816d743fdd23
+  tfo: false
+- name: 🇹🇼 台湾 723
+  server: 111.253.210.204
+  port: 10144
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b24ddb28-fc6d-466e-a7ab-b361956970d1
+  tfo: false
+- name: 🇹🇼 台湾 720
+  server: 114.46.105.238
+  port: 10075
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 38544173-8f44-4b7b-b8ae-02ad9b8df292
+  tfo: false
+- name: 🇹🇼 台湾 287
+  server: 36.235.4.185
+  port: 10091
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: baf05051-0059-45cc-ae99-19d56f0998f5
+  tfo: false
+- name: 🇹🇼 台湾 123
+  server: 1.170.56.159
+  port: 10120
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c9881f3c-e0ab-456a-b931-82a9687fd6d3
+  tfo: false
+- name: 🇹🇼 台湾 516
+  server: 1.170.10.140
+  port: 10099
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇺🇸 美国 205
+  server: h23.cpddx.club
+  port: 8443
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 1b0e033e-25bf-4c80-a848-e0b7e7e15810
+  auth: 1b0e033e-25bf-4c80-a848-e0b7e7e15810
+  sni: h23.cpddx.club
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 661
   server: 114.46.93.196
   port: 10068
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 4b69d552-dacc-4377-9e94-a7b262b64049
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
   tfo: false
-- name: 🇺🇸 美国 223
+- name: 🇺🇸 美国 229
   server: 190.93.244.195
   port: 2096
   client-fingerprint: chrome
@@ -153,120 +540,981 @@ proxies:
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
     headers:
       Host: ocost-dy.wmlefl.cc
-- name: 🇹🇼 台湾家宽 195
-  server: 1.170.34.91
-  port: 10088
+- name: 🇹🇼 台湾 134
+  server: 1.170.11.24
+  port: 10085
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 4b69d552-dacc-4377-9e94-a7b262b64049
+  password: a5891712-5425-4b22-9eb2-e649c2c82884
   tfo: false
-- name: 🇹🇼 台湾家宽 536
-  server: 125.228.162.163
-  port: 10137
+- name: 🇹🇼 台湾 020
+  server: 1.170.10.140
+  port: 10099
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b0e9361e-7159-4462-afe9-2715f1f4488c
+  password: 24d39bf1-a8d0-4f07-929a-bbbe15123846
   tfo: false
-- name: 🇹🇼 台湾家宽 405
-  server: 114.46.92.92
-  port: 10055
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
-  tfo: false
-- name: 🇹🇼 台湾家宽 655
-  server: 59.126.32.188
-  port: 10073
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 85dbecac-3fcd-482a-a46e-c965f895ef25
-  tfo: false
-- name: 🇹🇼 台湾家宽 316
-  server: 114.46.73.1
-  port: 10044
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
-  tfo: false
-- name: 🇹🇼 台湾家宽 216
-  server: 114.46.120.92
-  port: 10060
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fa223c44-96a3-4f34-92ca-404f588cd223
-  tfo: false
-- name: 🇹🇼 台湾 13
-  server: 1.170.37.253
-  port: 10102
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4b69d552-dacc-4377-9e94-a7b262b64049
-  tfo: false
-- name: 🇹🇼 台湾家宽 173
-  server: 36.232.83.219
-  port: 10122
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 108a9ec7-e734-4120-a740-c252a0d0e258
-  tfo: false
-- name: 🇹🇼 台湾家宽 382
-  server: 114.46.73.1
-  port: 10044
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 85dbecac-3fcd-482a-a46e-c965f895ef25
-  tfo: false
-- name: 🇭🇰 香港 25
-  server: hg1.xiaohuolongjc.top
-  port: 37771
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 0c061897-06f8-4211-a767-693412892270
-  auth: 0c061897-06f8-4211-a767-693412892270
-  sni: hg1.xiaohuolongjc.top
-  skip-cert-verify: true
-- name: 🇹🇼 台湾家宽 390
-  server: 125.231.72.120
-  port: 10065
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 566398ec-933e-4b40-a7b7-f3f7993982a0
-  tfo: false
-- name: 🇹🇼 台湾家宽 054
-  server: 36.232.119.203
-  port: 10150
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 85dbecac-3fcd-482a-a46e-c965f895ef25
-  tfo: false
-- name: 🇹🇼 台湾家宽 069
-  server: 1.170.34.91
-  port: 10088
+- name: 🇹🇼 台湾 396
+  server: 1.165.109.34
+  port: 10014
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d502e695-7d2f-44d9-bfdc-36873a537ac3
   tfo: false
-- name: 🇹🇼 台湾家宽 412
+- name: 🇹🇼 台湾家宽 058
+  server: 125.231.68.36
+  port: 10056
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 547ad509-c514-465f-9668-5904af29a233
+  tfo: false
+- name: 🇹🇼 台湾 381
+  server: 36.235.22.201
+  port: 10111
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾 512
+  server: 36.235.4.185
+  port: 10091
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b701b8e7-984a-4afa-aa86-0070181cd2dc
+  tfo: false
+- name: 🇹🇼 台湾 770
+  server: 1.170.10.140
+  port: 10099
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b24ddb28-fc6d-466e-a7ab-b361956970d1
+  tfo: false
+- name: 🇹🇼 台湾 942
+  server: 1.170.35.100
+  port: 10103
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69a51e0a-bb70-47c3-be39-d8e27d809c16
+  tfo: false
+- name: 🇹🇼 台湾 158
+  server: 59.126.32.188
+  port: 10073
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f2fe2a0b-1263-4bcf-a792-db71fde6712c
+  tfo: false
+- name: 🇹🇼 台湾 900
+  server: 1.170.43.64
+  port: 10090
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d89727e6-9767-407c-aacb-151737d10d08
+  tfo: false
+- name: 🇹🇼 台湾 824
+  server: 1.170.11.24
+  port: 10085
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇺🇸 美国 196
+  server: d84e72c9-t2cio0-tgy0qy-3kis.la.shifen.uk
+  port: 1743
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 117fc3d8-fd04-11ed-b345-f23c93136cb3
+  auth: 117fc3d8-fd04-11ed-b345-f23c93136cb3
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 344
+  server: 36.234.68.116
+  port: 10071
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e952ef79-5444-4431-aed1-fa76e651263f
+  tfo: false
+- name: 🇹🇼 台湾 037
+  server: 111.253.210.204
+  port: 10144
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
+  tfo: false
+- name: 🇹🇼 台湾 311
+  server: 125.229.191.101
+  port: 10007
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3be1ab87-2bc6-48e0-904e-4b3701c77950
+  tfo: false
+- name: 🇯🇵 日本
+  server: jp01.dns-node.top
+  port: 45612
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇸🇬 新加坡
+  server: sg04.dns-node.top
+  port: 45609
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇲🇲 缅甸
+  server: sg03.dns-node.top
+  port: 46333
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇲🇳 蒙古
+  server: sg03.dns-node.top
+  port: 46334
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇰🇭 柬埔寨
+  server: sg03.dns-node.top
+  port: 46335
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇧🇩 孟加拉国
+  server: sg04.dns-node.top
+  port: 46338
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇰🇿 哈萨克斯坦
+  server: sg04.dns-node.top
+  port: 46339
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇦🇪 阿联酋
+  server: sg04.dns-node.top
+  port: 46340
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇺🇸 美国
+  server: us01.dns-node.top
+  port: 45581
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇬🇧 英国 2
+  server: uk01.dns-node.top
+  port: 45615
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇲🇾 马来西亚
+  server: sg04.dns-node.top
+  port: 45610
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇮🇩 印度尼西亚
+  server: sg03.dns-node.top
+  port: 45608
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇳🇿 新西兰
+  server: sg04.dns-node.top
+  port: 45611
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇦🇺 澳大利亚
+  server: sg03.dns-node.top
+  port: 45607
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇵🇰 巴基斯坦
+  server: sg03.dns-node.top
+  port: 45800
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇿🇦 南非
+  server: de01.dns-node.top
+  port: 46102
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇩🇪 德国 2
+  server: eu.dns-node.top
+  port: 45594
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇪🇬 埃及
+  server: eu.dns-node.top
+  port: 45595
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇪🇸 西班牙
+  server: de01.dns-node.top
+  port: 45596
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇫🇷 法国 2
+  server: eu.dns-node.top
+  port: 45597
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇮🇳 印度
+  server: eu.dns-node.top
+  port: 45598
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇮🇹 意大利
+  server: de01.dns-node.top
+  port: 45599
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇵🇭 菲律宾
+  server: sg03.dns-node.top
+  port: 45661
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇳🇬 尼日利亚
+  server: eu.dns-node.top
+  port: 45601
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇹🇷 土耳其
+  server: eu.dns-node.top
+  port: 45602
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇺🇦 乌克兰
+  server: de01.dns-node.top
+  port: 45603
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇦🇷 阿根廷
+  server: us03.dns-node.top
+  port: 45583
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇻🇳 越南
+  server: sg04.dns-node.top
+  port: 46115
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇧🇷 巴西
+  server: us03.dns-node.top
+  port: 45585
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇨🇦 加拿大
+  server: us03.dns-node.top
+  port: 45586
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇧🇪 比利时
+  server: eu2.dns-node.top
+  port: 46301
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇩🇰 丹麦
+  server: eu2.dns-node.top
+  port: 46302
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇫🇮 芬兰
+  server: eu2.dns-node.top
+  port: 46303
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇬🇷 希腊
+  server: eu2.dns-node.top
+  port: 46306
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇮🇸 冰岛
+  server: eu2.dns-node.top
+  port: 46307
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇱🇹 立陶宛
+  server: eu2.dns-node.top
+  port: 46309
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇲🇽 墨西哥
+  server: us_nord.dns-node.top
+  port: 45590
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇳🇱 荷兰
+  server: eu3.dns-node.top
+  port: 46311
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇵🇱 波兰
+  server: eu3.dns-node.top
+  port: 46316
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇳🇴 挪威
+  server: eu3.dns-node.top
+  port: 46313
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇵🇹 葡萄牙
+  server: eu3.dns-node.top
+  port: 46314
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇨🇭 瑞士
+  server: eu3.dns-node.top
+  port: 46315
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇲🇦 摩洛哥
+  server: eu3.dns-node.top
+  port: 46317
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇰🇪 肯尼亚
+  server: eu3.dns-node.top
+  port: 46318
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 开曼群岛
+  server: us04.dns-node.top
+  port: 46319
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇵🇦 巴拿马
+  server: us04.dns-node.top
+  port: 46320
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇺🇾 乌拉圭
+  server: us04.dns-node.top
+  port: 46321
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: 12eb2f2c-641e-4cf6-9b55-b4b4c0c4039c
+  tfo: false
+- name: 🇹🇼 台湾 653
+  server: 125.230.21.104
+  port: 10020
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
+  tfo: false
+- name: 🇹🇼 台湾 603
+  server: 125.231.68.36
+  port: 10056
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾 657
+  server: 36.234.72.84
+  port: 10067
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 69a51e0a-bb70-47c3-be39-d8e27d809c16
+  tfo: false
+- name: 🇹🇼 台湾家宽 222
+  server: 1.170.23.215
+  port: 10109
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9f549d30-becd-4a10-80a8-bcff368fb595
+  tfo: false
+- name: 🇹🇼 台湾 545
+  server: 114.46.69.142
+  port: 10078
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 061cb847-4ee8-44bf-ac54-4eb33ee2ebbb
+  tfo: false
+- name: 🇹🇼 台湾 026
+  server: 125.231.68.36
+  port: 10056
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
+  tfo: false
+- name: 🇹🇼 台湾 626
+  server: 118.170.219.68
+  port: 10059
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾 307
+  server: 36.234.88.212
+  port: 10048
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 547ad509-c514-465f-9668-5904af29a233
+  tfo: false
+- name: 🇭🇰 香港 33
+  server: hg1.xiaohuolongjc.top
+  port: 37771
+  client-fingerprint: chrome
+  type: hysteria2
+  password: f995789e-3504-4e67-94db-22fb221b2d58
+  auth: f995789e-3504-4e67-94db-22fb221b2d58
+  sni: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 698
+  server: 125.228.162.163
+  port: 10137
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e952ef79-5444-4431-aed1-fa76e651263f
+  tfo: false
+- name: 🇹🇼 台湾 666
+  server: 114.46.71.121
+  port: 10042
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 38544173-8f44-4b7b-b8ae-02ad9b8df292
+  tfo: false
+- name: 🇹🇼 台湾 854
+  server: 1.170.35.100
+  port: 10103
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
+  tfo: false
+- name: 🇺🇸 美国 220
+  server: 190.93.245.195
+  port: 2096
+  client-fingerprint: chrome
+  type: trojan
+  password: slch2024
+  sni: ocost-dy.wmlefl.cc
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+    headers:
+      Host: ocost-dy.wmlefl.cc
+- name: 🇹🇼 台湾家宽 167
+  server: 36.232.69.138
+  port: 10146
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇹🇼 台湾 821
+  server: 1.170.35.100
+  port: 10103
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a5891712-5425-4b22-9eb2-e649c2c82884
+  tfo: false
+- name: 🇹🇼 台湾 220
+  server: 1.170.43.91
+  port: 10086
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f2fe2a0b-1263-4bcf-a792-db71fde6712c
+  tfo: false
+- name: 🇹🇼 台湾家宽 105
+  server: 1.170.56.159
+  port: 10120
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a5891712-5425-4b22-9eb2-e649c2c82884
+  tfo: false
+- name: 🇹🇼 台湾 072
+  server: 1.170.2.19
+  port: 10083
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9f549d30-becd-4a10-80a8-bcff368fb595
+  tfo: false
+- name: 🇹🇼 台湾 212
   server: 114.46.93.196
   port: 10068
   client-fingerprint: chrome
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b0e9361e-7159-4462-afe9-2715f1f4488c
+  password: c8449ac9-14ff-42ca-b6cf-816d743fdd23
   tfo: false
-- name: 🇷🇺 RU_152
+- name: 🇹🇼 台湾家宽 017
+  server: 59.126.32.188
+  port: 10073
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇹🇼 台湾 757
+  server: 36.234.71.171
+  port: 10012
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
+  tfo: false
+- name: 🇺🇸 美国 038
+  server: xjp1.xiaohuolongjc.top
+  port: 37771
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 0c061897-06f8-4211-a767-693412892270
+  auth: 0c061897-06f8-4211-a767-693412892270
+  sni: xjp1.xiaohuolongjc.top
+  skip-cert-verify: true
+- name: 🇺🇸 美国 045
+  server: xjp1.xiaohuolongjc.top
+  port: 37771
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 13ee6524-1579-451b-bb6a-9b6d5d74ac6a
+  auth: 13ee6524-1579-451b-bb6a-9b6d5d74ac6a
+  sni: xjp1.xiaohuolongjc.top
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 739
+  server: 118.170.204.156
+  port: 10006
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2f1935c3-0141-4c78-9f24-fe5cd6a1202d
+  tfo: false
+- name: 🇹🇼 台湾 164
+  server: 1.170.11.24
+  port: 10085
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d502e695-7d2f-44d9-bfdc-36873a537ac3
+  tfo: false
+- name: 🇹🇼 台湾 952
+  server: 118.170.204.149
+  port: 10036
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b24ddb28-fc6d-466e-a7ab-b361956970d1
+  tfo: false
+- name: 🇺🇸 美国 198
+  server: e605f2b7-t2bwg0-t9lb2a-1glq.la.shifen.uk
+  port: 1743
+  client-fingerprint: chrome
+  type: hysteria2
+  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  auth: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  skip-cert-verify: true
+- name: 🇹🇼 台湾 010
+  server: 1.170.14.70
+  port: 10118
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d89727e6-9767-407c-aacb-151737d10d08
+  tfo: false
+- name: 🇹🇼 台湾 672
+  server: 1.170.43.64
+  port: 10090
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1a9042a0-d0fb-4673-bddd-ef284d7f1b48
+  tfo: false
+- name: 🇹🇼 台湾家宽 026
+  server: 1.165.72.103
+  port: 10010
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3c3e66d5-1910-4994-9425-737ec6092b78
+  tfo: false
+- name: 🇹🇼 台湾 008
+  server: 1.170.2.19
+  port: 10083
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c9881f3c-e0ab-456a-b931-82a9687fd6d3
+  tfo: false
+- name: 🇹🇼 台湾 373
+  server: 111.253.207.240
+  port: 10098
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3c3e66d5-1910-4994-9425-737ec6092b78
+  tfo: false
+- name: 🇹🇼 台湾 110
+  server: 36.232.112.174
+  port: 10138
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6b0b787f-a994-412a-8e80-74b286e80459
+  tfo: false
+- name: 🇹🇼 台湾 709
+  server: 114.46.105.238
+  port: 10075
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d89727e6-9767-407c-aacb-151737d10d08
+  tfo: false
+- name: 🇹🇼 台湾 372
+  server: 1.165.72.103
+  port: 10010
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9394cbfd-96c5-4f18-8c32-7ebada102379
+  tfo: false
+- name: 🇹🇼 台湾 269
+  server: 114.33.53.213
+  port: 10037
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 43e1e672-5e18-4d87-bc72-89e552990406
+  tfo: false
+- name: 🇹🇼 台湾 139
+  server: 36.234.71.171
+  port: 10012
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d89727e6-9767-407c-aacb-151737d10d08
+  tfo: false
+- name: 🇹🇼 台湾家宽 032
+  server: 114.35.114.182
+  port: 10129
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3be1ab87-2bc6-48e0-904e-4b3701c77950
+  tfo: false
+- name: 🇭🇰 香港家宽 06
+  server: xg1.xiaohuolongjc.top
+  port: 37771
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 62267cdf-31cf-44ca-b61b-b6667128839b
+  auth: 62267cdf-31cf-44ca-b61b-b6667128839b
+  sni: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+- name: 🇹🇼 台湾家宽 181
+  server: 1.165.73.159
+  port: 10002
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b701b8e7-984a-4afa-aa86-0070181cd2dc
+  tfo: false
+- name: 🇰🇷 韩国 02
+  server: 158.180.77.90
+  port: 30102
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  skip-cert-verify: true
+- name: 🇹🇼 台湾家宽 079
+  server: 125.231.72.120
+  port: 10065
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 547ad509-c514-465f-9668-5904af29a233
+  tfo: false
+- name: 🇹🇼 台湾 202
+  server: 36.232.112.174
+  port: 10138
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
+  tfo: false
+- name: 🇹🇼 台湾 235
+  server: 1.165.72.103
+  port: 10010
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f2fe2a0b-1263-4bcf-a792-db71fde6712c
+  tfo: false
+- name: 🇹🇼 台湾 500
+  server: 111.253.207.240
+  port: 10098
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a5891712-5425-4b22-9eb2-e649c2c82884
+  tfo: false
+- name: 🇹🇼 台湾家宽 208
+  server: 36.234.88.212
+  port: 10048
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d502e695-7d2f-44d9-bfdc-36873a537ac3
+  tfo: false
+- name: 🇹🇼 台湾 748
+  server: 125.229.191.101
+  port: 10007
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d502e695-7d2f-44d9-bfdc-36873a537ac3
+  tfo: false
+- name: 🇹🇼 台湾 692
+  server: 111.253.207.240
+  port: 10098
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d1a2732e-d9d2-4d4a-95a3-2af5ae141c7d
+  tfo: false
+- name: 🇹🇼 台湾 370
+  server: 114.46.105.238
+  port: 10075
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 54ee7c83-45dc-404d-8975-34fbcac92f87
+  tfo: false
+- name: 🇺🇸 美国 225
+  server: usa.visa.com
+  port: 443
+  client-fingerprint: chrome
+  type: trojan
+  password: slch2024
+  sni: ocost-dy.wmlefl.cc
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ocost-dy.wmlefl.cc
+- name: 🇹🇼 台湾家宽 071
+  server: 114.46.92.92
+  port: 10055
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c8449ac9-14ff-42ca-b6cf-816d743fdd23
+  tfo: false
+- name: 🇹🇼 台湾 695
+  server: 36.234.72.84
+  port: 10067
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇹🇼 台湾 298
+  server: 1.170.10.140
+  port: 10099
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6b0b787f-a994-412a-8e80-74b286e80459
+  tfo: false
+- name: 🇹🇼 台湾 658
+  server: 36.234.88.212
+  port: 10048
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8b66024-6718-418e-9823-0ea997a8d75f
+  tfo: false
+- name: 🇹🇼 台湾 494
+  server: 1.170.43.91
+  port: 10086
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d502e695-7d2f-44d9-bfdc-36873a537ac3
+  tfo: false
+- name: 🇹🇼 台湾 506
+  server: 36.232.69.138
+  port: 10146
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d502e695-7d2f-44d9-bfdc-36873a537ac3
+  tfo: false
+- name: 🇹🇼 台湾家宽 007
+  server: 125.228.31.10
+  port: 10113
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f2fe2a0b-1263-4bcf-a792-db71fde6712c
+  tfo: false
+- name: 🇹🇼 台湾家宽 156
+  server: 114.46.93.196
+  port: 10068
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7fcf8f63-f127-406e-86af-f5251db7a146
+  tfo: false
+- name: 🇷🇺 RU_133
   type: vmess
   server: ye.fxlcn.com
   port: 45245
@@ -277,7 +1525,7 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇷🇺 RU_153
+- name: 🇷🇺 RU_134
   type: vmess
   server: fa.fxlcn.com
   port: 45215
@@ -288,40 +1536,7 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_183
-  type: vmess
-  server: lt.fxlcn.com
-  port: 45276
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_184
-  type: vmess
-  server: lt.fxlcn.com
-  port: 45417
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_185
-  type: vmess
-  server: 15.204.234.200
-  port: 41100
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_186
+- name: 🇺🇸 US_163
   type: vmess
   server: lt.fxlcn.com
   port: 45258
@@ -332,10 +1547,10 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_188
+- name: 🇺🇸 US_164
   type: vmess
   server: lt.fxlcn.com
-  port: 45291
+  port: 45235
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   alterId: 0
   cipher: auto
@@ -343,40 +1558,18 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_189
+- name: 🇺🇸 US_165
   type: vmess
-  server: fa.fxlcn.com
-  port: 45247
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  server: 15.204.234.200
+  port: 41100
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
   alterId: 0
   cipher: auto
   network: tcp
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_191
-  type: vmess
-  server: 216.227.168.157
-  port: 45417
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_192
-  type: vmess
-  server: lt.fxlcn.com
-  port: 45287
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_195
+- name: 🇺🇸 US_166
   type: vmess
   server: lt.fxlcn.com
   port: 45294
@@ -387,7 +1580,7 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_196
+- name: 🇺🇸 US_167
   type: vmess
   server: lt.fxlcn.com
   port: 45288
@@ -398,7 +1591,18 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_198
+- name: 🇺🇸 US_173
+  type: vmess
+  server: 216.227.168.157
+  port: 45417
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_174
   type: vmess
   server: fa.fxlcn.com
   port: 45237
@@ -409,7 +1613,29 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_199
+- name: 🇺🇸 US_175
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45287
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_176
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45276
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_177
   type: vmess
   server: lt.fxlcn.com
   port: 45271
@@ -420,10 +1646,32 @@ proxies:
   tls: false
   sni: ''
   ws-opts: {}
-- name: 🇺🇸 US_200
+- name: 🇺🇸 US_178
   type: vmess
   server: lt.fxlcn.com
-  port: 45235
+  port: 45291
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_179
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45417
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_180
+  type: vmess
+  server: fa.fxlcn.com
+  port: 45247
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   alterId: 0
   cipher: auto
@@ -618,6 +1866,20 @@ proxies:
   servername: iosapps.itunes.apple.com
   network: tcp
   udp: true
+- name: '[Vless] 🇭🇰 亚马逊香港2号'
+  server: 3bd9.55dca.e048.f25-fef1f.yfjcs.com
+  port: 443
+  reality-opts:
+    public-key: 9G1Wl-72Sn9N5kjgUm4LGPkG1f6EjJUxbpGqIxUChXo
+    short-id: c07250e9
+  client-fingerprint: chrome
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: iosapps.itunes.apple.com
+  network: tcp
+  udp: true
 - name: '[Vless] 🇮🇳 印度|01|0.1倍'
   server: 104.18.20.69
   port: 443
@@ -631,12 +1893,12 @@ proxies:
     headers:
       Host: in1s-s.pqvip.top
   udp: true
-- name: '[Vless] 🇯🇵 AWS日本东京01|高速专线'
-  server: pq.aws48.yydjc.top
+- name: '[Vless] 🇯🇵 AWS日本东京02|高速专线'
+  server: pq.aws49.yydjc.top
   port: 443
   reality-opts:
-    public-key: 6T-kYBf65ERaEAhxIyHL1FCfu0QR6P2XQMtcvUgzSjM
-    short-id: 70ad150d
+    public-key: xOnY2ykLrcFMIhp7GBQu1mSH7yIW-yCc1ThJnVVtKDc
+    short-id: 5b6762be
   client-fingerprint: chrome
   type: vless
   uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
@@ -677,6 +1939,17 @@ proxies:
   sni: www.apple.com
   skip-cert-verify: true
   ports: 60000-65530
+  udp: true
+- name: '[Vless] 🇯🇵 亚马逊日本1号'
+  server: 3bd9.55dca.e048.f1-fef1f.yfjcs.com
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yfjp.xn--4gq62f52gppi29k.com
+  network: tcp
   udp: true
 - name: '[Vless] 🇯🇵 亚马逊日本2号'
   server: 3bd9.55dca.e048.f2-fef1f.yfjcs.com
@@ -892,6 +2165,20 @@ proxies:
   servername: iosapps.itunes.apple.com
   network: tcp
   udp: true
+- name: '[Vless] 🇸🇬 AWS新加坡03|高速专线'
+  server: pq.aws60.yydjc.top
+  port: 443
+  reality-opts:
+    public-key: xjWkdgeetCnB1-kHqwVnAaSUqg4qK9TFWQlamW8FSRI
+    short-id: e2e15173
+  client-fingerprint: chrome
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: iosapps.itunes.apple.com
+  network: tcp
+  udp: true
 - name: '[Vless] 🇸🇬 AWS新加坡04|高速专线'
   server: pq.aws61.yydjc.top
   port: 443
@@ -939,16 +2226,565 @@ proxies:
   skip-cert-verify: true
   ports: 60000-65530
   udp: true
-- name: '[Vless] 🇸🇬 亚马逊新加坡3号'
-  server: 3bd9.55dca.e048.f9-fef1f.yfjcs.com
+- name: '[Vless] 🇸🇬 亚马逊新加坡1号'
+  server: 3bd9.55dca.e048.f7-fef1f.yfjcs.com
   port: 443
-  client-fingerprint: chrome
+  client-fingerprint: safari
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: b295-23ap29-6bh.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 亚马逊新加坡2号'
+  server: 3bd9.55dca.e048.f8-fef1f.yfjcs.com
+  port: 443
+  client-fingerprint: firefox
   type: vless
   uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
   tls: true
   flow: xtls-rprx-vision
   servername: yfsg-1.xn--4gq62f52gppi29k.com
   network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 亚马逊新加坡4号'
+  server: 3bd9.55dca.e048.f10-fef1f.yfjcs.com
+  port: 443
+  client-fingerprint: ios
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: yfsg-1.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 新加坡'
+  server: 140.245.43.199
+  port: 443
+  reality-opts:
+    public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
+    short-id: a86103965ac913f2
+  client-fingerprint: chrome
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tv.apple.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 新加坡2'
+  server: 140.245.58.56
+  port: 443
+  reality-opts:
+    public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
+    short-id: a86103965ac913f2
+  client-fingerprint: chrome
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: tv.apple.com
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡2|高速专线|hy2'
+  server: 158.178.236.104
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇸🇬 新加坡3'
+  server: 213.35.108.22
+  port: 443
+  reality-opts:
+    public-key: IPno1w9GUxhRN2JY_yIka2DNlnuJHQeb3_0yOCM4pQg
+    short-id: 3ae54db4833c
+  client-fingerprint: chrome
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: buylite.music.apple.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 新加坡4'
+  server: 168.138.165.109
+  port: 443
+  reality-opts:
+    public-key: kR-_5J2EPiB9nrdgyXjgzfJQnxQodkGeV_jgKOEnlEM
+    short-id: fc814374abba
+  client-fingerprint: ios
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: buylite.music.apple.com
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡|高速专线|hy2'
+  server: 152.69.220.212
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡专线'
+  server: 168.138.184.187
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|01|高速专线|hy2|0.1倍'
+  server: pq.us1.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|02|高速专线|hy2|0.1倍'
+  server: pq.us2.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|03|高速专线|hy2|0.1倍'
+  server: pq.us3.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|04|高速专线|hy2|0.1倍'
+  server: pq.us4.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|05|高速专线|hy2|0.1倍'
+  server: pq.us5.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|06|高速专线|hy2|0.1倍'
+  server: pq.us6.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|07|高速专线|hy2|0.1倍'
+  server: pq.us7.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|08|高速专线|hy2|0.1倍'
+  server: pq.us8.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|09|高速专线|hy2|0.1倍'
+  server: pq.us9.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|10|高速专线|hy2|0.1倍'
+  server: pq.us10.globals-download.com
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|11|高速专线|hy2|0.1倍'
+  server: 208.87.243.195
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|13|高速专线|hy2|0.1倍'
+  server: 108.181.4.223
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|14|高速专线|hy2|0.1倍'
+  server: 140.174.52.31
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|15|高速专线|hy2|0.1倍'
+  server: 108.181.5.199
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国凤凰城|高速专线|hy2'
+  server: 129.146.95.165
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞01|CT|CM|CU'
+  server: 146.235.208.162
+  port: 443
+  client-fingerprint: ios
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: dcpqjs.yydjc.top
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国圣何塞02|hy2'
+  server: 146.235.201.189
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国圣何塞03|hy2'
+  server: 167.234.210.122
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞05|CT|CM|CU'
+  server: 146.235.228.34
+  port: 443
+  client-fingerprint: ios
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  servername: dcpqjs.yydjc.top
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国圣何塞05|hy2'
+  server: 167.234.208.240
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国圣何塞06|hy2'
+  server: 192.18.133.190
+  port: 35000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞2'
+  server: 192.9.247.127
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞3'
+  server: 64.181.255.250
+  port: 443
+  client-fingerprint: safari
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞4'
+  server: 192.9.142.185
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞5'
+  server: 165.1.68.155
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  tls: true
+  flow: xtls-rprx-vision
+  servername: 767w1-38dc0-9ocf2.xn--4gq62f52gppi29k.com
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|2|率|0.1倍'
+  server: 199.168.96.179
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|3|率|0.1倍'
+  server: 63.141.239.67
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|4|率|0.1倍'
+  server: 107.150.55.131
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|5|率|0.1倍'
+  server: 192.151.146.155
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|6|率|0.1倍'
+  server: 63.141.226.99
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|7|率|0.1倍'
+  server: 173.208.195.27
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|8|率|0.1倍'
+  server: 142.54.189.91
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国堪萨斯专线|率|0.1倍'
+  server: 63.141.226.123
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|2|率|0.1倍'
+  server: 108.181.23.241
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|3|率|0.1倍'
+  server: 108.181.23.249
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|4|率|0.1倍'
+  server: 108.181.23.255
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|5|率|0.1倍'
+  server: 208.87.242.79
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|6|率|0.1倍'
+  server: 208.87.242.189
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|7|率|0.1倍'
+  server: 208.87.242.207
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国洛杉矶专线|8|率|0.1倍'
+  server: 208.87.242.215
+  port: 20000
+  client-fingerprint: chrome
+  type: hysteria2
+  password: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  auth: 779de578-4fdc-49ce-a18e-8073de6e5de5
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: '[Vless] 🇺🇸 美国阿什本|01|0.1倍'
+  server: 69.84.182.108
+  port: 443
+  client-fingerprint: chrome
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  servername: pq-us1.globals-download.com
+  network: ws
+  ws-opts:
+    path: /pq/us1
+    headers:
+      Host: pq-us1.globals-download.com
   udp: true
 proxy-groups:
 - name: 节点选择
@@ -962,95 +2798,299 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 🇺🇸 美国 223
-  - 🇺🇸 US_185
-  - 🇺🇸US-15.197.162.184-2632
-  - '[Hysteria2] 🇬🇧 英国伦敦专线|率|0.1倍'
-  - 🇺🇸 美国 145
-  - '[Vless] 🇬🇧 英国伦敦'
-  - '[Hysteria2] 🇬🇧 英国|高速专线|hy2|0.1倍'
+  - 🇺🇸 US_165
+  - 🇺🇸 美国 220
+  - '🇺🇲@FreakConfig #1'
+  - SSR-加拿大-79.127.233.170:989
+  - 🇺🇸 美国 229
+  - '[Hysteria2] 🇺🇸 美国圣何塞03|hy2'
+  - '[Hysteria2] 🇺🇸 美国圣何塞02|hy2'
+  - 🇺🇸[openproxylist.com] ss-US
+  - 🇺🇸 美国 775
+  - '[Vless] 🇺🇸 美国圣何塞4'
+  - '[Hysteria2] 🇺🇸 美国圣何塞05|hy2'
+  - '[Vless] 🇺🇸 美国圣何塞2'
+  - 🇯🇵 japan
+  - '[Hysteria2] 🇺🇸 美国圣何塞06|hy2'
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|5|率|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国凤凰城|高速专线|hy2'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|率|0.1倍'
+  - 🇺🇸 美国 045
+  - '[Hysteria2] 🇺🇸 美国|14|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|7|率|0.1倍'
+  - 🇺🇸 美国 038
+  - '[Vless] 🇺🇸 美国圣何塞01|CT|CM|CU'
+  - 🇹🇼 台湾家宽 208
+  - 🇹🇼 台湾 836
+  - 🇹🇼 台湾 158
+  - 🇹🇼 台湾 952
+  - 🇹🇼 台湾 941
+  - 🇹🇼 台湾 757
+  - 🇹🇼 台湾家宽 017
+  - 🇹🇼 台湾 370
+  - 🇹🇼 台湾 659
+  - 🇹🇼 台湾 472
+  - 🇹🇼 台湾 372
+  - 🇹🇼 台湾 720
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|6|率|0.1倍'
+  - 🇹🇼 台湾 344
+  - 🇹🇼 台湾 672
+  - 🇹🇼 台湾 828
+  - 🇹🇼 台湾 494
+  - 🇹🇼 台湾 585
+  - 🇹🇼 台湾家宽 026
+  - 🇹🇼 台湾 653
+  - 🇹🇼 台湾 692
+  - 🇹🇼 台湾 875
+  - 🇹🇼 台湾家宽 167
+  - 🇹🇼 台湾 356
+  - 🇹🇼 台湾 396
+  - 🇹🇼 台湾 824
+  - 🇹🇼 台湾 902
+  - 🇹🇼 台湾 139
+  - 🇹🇼 台湾 657
+  - 🇹🇼 台湾 626
+  - 🇹🇼 台湾家宽 044
+  - 🇹🇼 台湾 666
+  - 🇹🇼 台湾 485
+  - 🇹🇼 台湾 381
+  - 🇹🇼 台湾 489
+  - 🇹🇼 台湾 235
+  - 🇹🇼 台湾 959
+  - 🇹🇼 台湾家宽 105
+  - 🇹🇼 台湾 748
+  - 🇹🇼 台湾 084
+  - 🇹🇼 台湾 363
+  - 🇹🇼 台湾 500
+  - 🇹🇼 台湾 542
+  - 🇹🇼 台湾 661
+  - 🇹🇼 台湾 202
+  - 🇹🇼 台湾 506
+  - 🇹🇼 台湾 072
+  - 🇹🇼 台湾 545
+  - 🇹🇼 台湾 723
+  - 🇹🇼 台湾 854
+  - 🇹🇼 台湾 287
+  - 🇹🇼 台湾 346
+  - 🇹🇼 台湾 307
+  - 🇹🇼 台湾家宽 071
+  - 🇹🇼 台湾 770
+  - 🇹🇼 台湾 739
+  - 🇹🇼 台湾家宽 058
+  - 🇹🇼 台湾 709
+  - 🇹🇼 台湾 246
+  - 🇹🇼 台湾家宽 007
+  - 🇹🇼 台湾 604
+  - 🇹🇼 台湾 212
+  - 🇹🇼 台湾 220
+  - 🇹🇼 台湾 695
+  - 🇹🇼 台湾 269
+  - 🇹🇼 台湾 849
+  - 🇹🇼 台湾 386
+  - 🇹🇼 台湾 298
+  - 🇹🇼 台湾 811
+  - 🇹🇼 台湾 020
+  - 🇹🇼 台湾家宽 181
+  - 🇹🇼 台湾 676
+  - 🇹🇼 台湾 658
+  - 🇹🇼 台湾 311
+  - 🇹🇼 台湾 516
+  - 🇹🇼 台湾家宽 156
+  - 🇹🇼 台湾 884
+  - 🇹🇼 台湾 110
+  - 🇹🇼 台湾家宽 222
+  - 🇹🇼 台湾 900
+  - 🇹🇼 台湾 603
+  - 🇹🇼 台湾 134
+  - 🇹🇼 台湾家宽 104
+  - 🇹🇼 台湾 533
+  - 🇹🇼 台湾 008
+  - 🇹🇼 台湾 164
+  - 🇹🇼 台湾家宽 032
+  - 🇹🇼 台湾 435
+  - 🇹🇼 台湾家宽 187
+  - 🇹🇼 台湾 698
+  - 🇹🇼 台湾 512
+  - 🇹🇼 台湾家宽 010
+  - 🇹🇼 台湾 957
+  - 🇹🇼 台湾 821
+  - 🇹🇼 台湾 010
+  - 🇹🇼 台湾 066
+  - 🇹🇼 台湾 037
+  - 🇹🇼 台湾 026
+  - 🇹🇼 台湾家宽 031
+  - 🇹🇼 台湾家宽 079
+  - '[Hysteria2] 🇺🇸 美国|11|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|5|率|0.1倍'
+  - 🇹🇼 台湾 942
+  - '[Hysteria2] 🇺🇸 美国|13|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|4|率|0.1倍'
+  - 🇹🇼 台湾 123
   - '[Vless] 🇬🇧 英国伦敦2'
+  - uk_manchester
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|2|率|0.1倍'
+  - '[Vless] 🇬🇧 英国伦敦'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|2|率|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|6|率|0.1倍'
+  - 45.11.1.62:50000
+  - '[Vless] 🇺🇸 美国圣何塞05|CT|CM|CU'
+  - '[Hysteria2] 🇬🇧 英国伦敦专线|率|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|3|率|0.1倍'
+  - 🇨🇦 加拿大
+  - '[Hysteria2] 🇩🇪 德国2|高速专线|hy2'
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|4|率|0.1倍'
   - '[Vless] 🇳🇱 荷兰阿姆斯特丹'
   - '[Hysteria2] 🇩🇪 德国|高速专线|hy2'
-  - '[Vless] 🇫🇷 法国马赛'
+  - '[Vless] 🇺🇸 美国圣何塞5'
   - '[Vless] 🇫🇷 法国巴黎2'
-  - '[Hysteria2] 🇩🇪 德国2|高速专线|hy2'
-  - '[Vless] 🇩🇪 德国法兰克福'
+  - '[Vless] 🇺🇸 美国阿什本|01|0.1倍'
+  - '[Vless] 🇺🇸 美国圣何塞3'
+  - '[Vless] 🇫🇷 法国马赛'
+  - 🇺🇸 美国 236
+  - '[Hysteria2] 🇬🇧 英国|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|3|率|0.1倍'
   - '[Hysteria2] 🇨🇭 瑞士苏黎世|高速专线|hy2'
+  - '[Vless] 🇩🇪 德国法兰克福'
+  - 🇺🇸 美国 205
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|8|率|0.1倍'
   - '[Vless] 🇳🇱 荷兰|BT下载|率|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国堪萨斯专线|7|率|0.1倍'
+  - LT-45.87.175.171-0283 | 2.324MB
   - '[Hysteria2] 🇳🇱 荷兰专线'
-  - '[Hysteria2] 🇧🇷 巴西专线'
-  - 🇺🇸US-15.197.162.184-3479
+  - 🇺🇸 美国 225
+  - 🇺🇸 美国
   - '[Hysteria2] 🇯🇵 日本专线'
-  - 🇺🇸 US_191
-  - 🇹🇼 台湾家宽 195
+  - '[Hysteria2] 🇧🇷 巴西专线'
+  - '[Hysteria2] 🇺🇸 美国|15|高速专线|hy2|0.1倍'
+  - 🇺🇸 US_173
   - '[Vless] 🇯🇵 日本东京'
-  - 🇹🇼 台湾家宽 711
-  - 🇹🇼 台湾家宽 412
-  - 🇹🇼 台湾家宽 216
-  - 🇹🇼 台湾家宽 382
-  - 🇹🇼 台湾 22
-  - 🇹🇼 台湾家宽 768
-  - 🇹🇼 台湾家宽 655
-  - 🇹🇼 台湾家宽 390
-  - 🇹🇼 台湾 18
-  - 🇹🇼 台湾家宽 054
-  - 🇹🇼 台湾家宽 405
-  - 🇹🇼 台湾家宽 491
-  - 🇹🇼 台湾家宽 069
-  - 🇹🇼 台湾家宽 536
-  - 🇹🇼 台湾家宽 316
-  - 🇹🇼 台湾 13
-  - 🇹🇼 台湾家宽 173
-  - '[Vless] 🇯🇵 日本高速|01|0.1倍'
-  - 🇺🇸 US_200
-  - 🇺🇸 US_199
-  - '[Hysteria2] 🇰🇷 韩国专线2'
-  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线2'
-  - '[Hysteria2] 🇦🇺 澳大利亚悉尼'
+  - 🇺🇸 US_178
+  - 🇵🇦 巴拿马
+  - 🇺🇸 US_176
+  - 🇰🇪 肯尼亚
+  - 🇹🇷 土耳其
   - '[Hysteria2] 🇰🇷 韩国5|高速专线|hy2'
-  - 🇺🇸 US_196
-  - 🇺🇸 US_188
-  - '[Hysteria2] 🇰🇷 韩国2|高速专线|hy2'
-  - '[Hysteria2] 🇦🇺 澳大利亚3|高速专线|hy2'
-  - '[Hysteria2] 🇰🇷 韩国3|高速专线|hy2'
+  - 🇫🇮 芬兰
+  - '[Hysteria2] 🇰🇷 韩国专线2'
+  - 🇺🇸 US_179
+  - 🇵🇭 菲律宾
+  - 🇺🇸 美国 196
+  - 开曼群岛
+  - 🇺🇸 美国 193
+  - '[Hysteria2] 🇺🇸 美国|04|高速专线|hy2|0.1倍'
   - '[Hysteria2] 🇦🇺 澳大利亚2|高速专线|hy2'
-  - '[Hysteria2] 🇰🇷 韩国|高速专线|hy2'
-  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线'
-  - '[Hysteria2] 🇦🇺 澳大利亚|高速专线|hy2'
-  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线3'
-  - 🇰🇷KR-203.231.242.12-1061
-  - 🇬🇷GR-192.71.166.102-3713
-  - 🇺🇸 US_198
-  - '[Hysteria2] 🇯🇵 AWS日本东京|高速专线|hy2'
-  - '[Vless] 🇯🇵 亚马逊日本2号'
-  - 🇭🇰 香港5|@stairnode
-  - '[Vless] 🇰🇷 韩国首尔01'
-  - 🇺🇸 US_183
-  - 🇺🇸 US_186
-  - 🇷🇺 RU_152
-  - 🇺🇸 US_192
-  - 🇺🇸 US_189
-  - '[Hysteria2] 🇸🇬 AWS新加坡3|高速专线|hy2'
-  - '[Vless] 🇮🇳 印度|01|0.1倍'
-  - '[Hysteria2] 🇯🇵 AWS日本东京2|高速专线|hy2'
-  - '[Vless] 🇯🇵 AWS日本东京01|高速专线'
-  - '[Hysteria2] 🇯🇵 AWS日本东京3|高速专线|hy2'
-  - '[Hysteria2] 🇸🇬 AWS新加坡2|高速专线|hy2'
-  - '[Vless] 🇸🇬 AWS新加坡04|高速专线'
-  - 🇭🇰 香港 25
-  - '[Hysteria2] 🇦🇪 迪拜|高速专线|hy2'
+  - '[Hysteria2] 🇺🇸 美国|03|高速专线|hy2|0.1倍'
   - '[Hysteria2] 🇰🇷 韩国4|高速专线|hy2'
-  - 🇺🇸 US_195
-  - '[Vless] 🇭🇰 亚马逊香港1号'
-  - 🇷🇺 RU_153
+  - 🇺🇸 美国 201
+  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线3'
+  - 🇱🇹 立陶宛
+  - 🇰🇷 韩国 02
+  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线'
+  - 🇹🇼 台湾 373
+  - '[Hysteria2] 🇦🇺 澳大利亚3|高速专线|hy2'
+  - 🇧🇪 比利时
+  - 🇺🇸 美国 198
+  - 🇯🇵 日本
+  - '[Hysteria2] 🇰🇷 韩国|高速专线|hy2'
+  - 🇺🇸 US_180
+  - 🇩🇰 丹麦
+  - '[Hysteria2] 🇦🇺 澳大利亚悉尼'
+  - 🇬🇷 希腊
+  - 🇵🇰 巴基斯坦
+  - 🇲🇦 摩洛哥
+  - '[Hysteria2] 🇰🇷 韩国CT|CM|CU专线2'
+  - 🇫🇷 法国 2
+  - 🇮🇸 冰岛
+  - 🇨🇭 瑞士
+  - '[Hysteria2] 🇰🇷 韩国2|高速专线|hy2'
+  - '[Hysteria2] 🇰🇷 韩国3|高速专线|hy2'
+  - '[Vless] 🇯🇵 日本高速|01|0.1倍'
+  - 🇪🇬 埃及
+  - '[Vless] 🇰🇷 韩国首尔01'
+  - 🇲🇽 墨西哥
+  - 🇺🇸 US_174
+  - 🇳🇱[openproxylist.com] ss-NL
+  - '[Hysteria2] 🇦🇺 澳大利亚|高速专线|hy2'
+  - '[Hysteria2] 🇯🇵 AWS日本东京|高速专线|hy2'
+  - 🇺🇦 乌克兰
+  - 🇮🇹 意大利
+  - 🇭🇰 香港 33
+  - 🇧🇩 孟加拉国
+  - 🇺🇸 US_175
+  - 🇬🇧 英国 2
+  - 🇲🇾 马来西亚
+  - 🇺🇸 US_167
+  - 🇩🇪 德国 2
+  - 🇳🇴 挪威
+  - 🇳🇱 荷兰
+  - 🇵🇹 葡萄牙
+  - 🇺🇾 乌拉圭
+  - 🇮🇩 印度尼西亚
+  - 🇪🇸 西班牙
+  - 🇵🇱 波兰
+  - 🇻🇳 越南
+  - 🇺🇸 US_163
+  - 🇺🇸 US_177
+  - 🇧🇷 巴西
+  - '[Hysteria2] 🇺🇸 美国|07|高速专线|hy2|0.1倍'
+  - '[Vless] 🇸🇬 新加坡2'
+  - '[Hysteria2] 🇯🇵 AWS日本东京2|高速专线|hy2'
+  - 🇺🇸 US_166
+  - '[Vless] 🇸🇬 新加坡'
+  - 🇸🇬 新加坡
+  - '[Hysteria2] 🇯🇵 AWS日本东京3|高速专线|hy2'
+  - '[Hysteria2] 🇺🇸 美国|02|高速专线|hy2|0.1倍'
+  - 🇰🇭 柬埔寨
+  - '[Hysteria2] 🇸🇬 新加坡专线'
+  - '[Hysteria2] 🇺🇸 美国|01|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国洛杉矶专线|8|率|0.1倍'
+  - '[Vless] 🇸🇬 新加坡3'
+  - '[Vless] 🇸🇬 AWS新加坡03|高速专线'
+  - 🇭🇰 香港 36
+  - '[Hysteria2] 🇸🇬 新加坡|高速专线|hy2'
+  - 🇲🇳 蒙古
+  - 🇷🇺 RU_133
+  - 🇲🇲 缅甸
+  - '[Vless] 🇸🇬 新加坡4'
+  - 🇦🇷 阿根廷
+  - 🇷🇺 RU_134
+  - '[Vless] 🇯🇵 AWS日本东京02|高速专线'
+  - '[Hysteria2] 🇺🇸 美国|10|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|09|高速专线|hy2|0.1倍'
+  - 🇰🇿 哈萨克斯坦
+  - '[Vless] 🇮🇳 印度|01|0.1倍'
+  - '[Vless] 🇭🇰 亚马逊香港2号'
+  - '[Hysteria2] 🇸🇬 AWS新加坡2|高速专线|hy2'
   - '[Hysteria2] 🇸🇬 AWS新加坡|高速专线|hy2'
-  - 🇺🇸 US_184
-  - 🇭🇰 香港家宽 06
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - '[Hysteria2] 🇺🇸 美国|08|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|06|高速专线|hy2|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|05|高速专线|hy2|0.1倍'
+  - 🇳🇬 尼日利亚
+  - '[Hysteria2] 🇦🇪 迪拜|高速专线|hy2'
+  - 🇦🇪 阿联酋
+  - 🇦🇺 澳大利亚
+  - '[Vless] 🇸🇬 AWS新加坡04|高速专线'
   - '[Vless] 🇸🇬 AWS新加坡01|高速专线'
+  - '[Vless] 🇸🇬 亚马逊新加坡1号'
+  - 🇳🇿 新西兰
+  - 🇳🇱@FreakConfig
+  - 🇭🇰 香港家宽 06
+  - 🇺🇸 US_164
+  - '[Hysteria2] 🇸🇬 AWS新加坡3|高速专线|hy2'
+  - '[Vless] 🇯🇵 亚马逊日本2号'
+  - 🇺🇸 美国-拉斯维加斯-002
+  - '[Vless] 🇭🇰 亚马逊香港1号'
+  - 🇿🇦 南非
+  - 🇮🇳 印度
+  - '[Vless] 🇸🇬 亚马逊新加坡4号'
+  - 🇺🇸[openproxylist.com] vless-US-AGen
   - '[Vless] 🇯🇵 亚马逊日本4号'
-  - '[Vless] 🇸🇬 亚马逊新加坡3号'
+  - '[Hysteria2] 🇸🇬 新加坡2|高速专线|hy2'
+  - IL_10169_0024
+  - '[Vless] 🇯🇵 亚马逊日本1号'
+  - ❓_🇨🇳:🇭🇰_💼_github.com/Ruk1ng001_6637353965303665
+  - '[Vless] 🇸🇬 亚马逊新加坡2号'
+  - IR_10169_0026
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
