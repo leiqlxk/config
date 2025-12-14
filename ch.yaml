@@ -32,18 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- type: ss
-  name: 🇰🇷_KR_韩国
-  server: 218.237.185.230
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- type: ss
-  name: 🇰🇷_KR_韩国_1
-  server: p141.panda001.net
-  port: 4652
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
 - type: hysteria
   name: 🇫🇷_FR_法国
   server: 62.210.10.186
@@ -59,18 +47,6 @@ proxies:
 - alpn:
   - h3
   auth-str: dongtaiwang.com
-  down: '100'
-  name: 🇫🇷_FR_法国-JJmO
-  port: 15010
-  protocol: udp
-  server: 195.154.200.40
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '100'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
   down: '55'
   name: 🇺🇸_US_美国
   port: 49003
@@ -80,13 +56,6 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '11'
-- cipher: chacha20-ietf-poly1305
-  name: US美国(mibei77.com 米贝节点分享)
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: FR法国(mibei77.com 米贝节点分享)
   password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
@@ -101,29 +70,6 @@ proxies:
   server: switcher-nick-croquet.freesocks.work
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: RU俄罗斯(mibei77.com 米贝节点分享) 3
-  password: YQCSKoCF3QazW8YlvDBWA4
-  port: 56689
-  server: 109.71.246.210
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港|@stairnode
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港5|@stairnode
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.242
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 🇸🇬 新加坡2|@stairnode
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 3145
@@ -151,12 +97,6 @@ proxies:
   port: 38388
   server: 103.186.155.139
   type: ss
-- cipher: aes-256-gcm
-  name: '[SS] 🇩🇪 DE SS-06 | free-nodes'
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 57.128.214.100
-  type: ss
 - client-fingerprint: random
   name: '[Vless] 🇬🇧 GB VLESS-07 | free-nodes'
   network: ws
@@ -177,408 +117,6 @@ proxies:
   port: 12000
   server: 144.217.164.29
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[Vless] 🇷🇺 RU VLESS-26 | free-nodes'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
-    short-id: 5540e44a53c3d01c
-  server: 217.16.24.170
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-28 | free-nodes'
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 95.173.218.203
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-29 | free-nodes'
-  password: LQyAUItafUmmO3EZZx9UbiX6IGydSBgL
-  port: 443
-  server: 45.12.144.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-30 | free-nodes'
-  password: 595HLF3fHUuw0McM51tpvPygSIB1uf4D
-  port: 443
-  server: 107.174.114.71
-  type: ss
-- client-fingerprint: chrome
-  name: '[Vless] 未知 VLESS-53 | free-nodes'
-  network: ws
-  port: 443
-  server: clyde.ns.cloudflare.com
-  servername: redlabell.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
-  ws-opts:
-    headers:
-      Host: redlabell.info
-    path: /aafeuws
-- name: '[Vless] 未知 VLESS-55 | free-nodes'
-  network: tcp
-  port: 58349
-  server: 31.44.0.63
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 48a8cab5-ce75-4c8a-90f5-dcd020c89b4b
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-61 | free-nodes'
-  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
-  port: 443
-  server: 5.182.37.87
-  type: ss
-- client-fingerprint: random
-  name: '[Vless] 未知 VLESS-62 | free-nodes'
-  network: ws
-  port: 443
-  server: 45.131.185.234
-  servername: ak.suoni.nyc.mn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  ws-opts:
-    headers:
-      Host: ak.suoni.nyc.mn
-    path: /proxyip=sjc.o00o.ooo
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-64 | free-nodes'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-65 | free-nodes'
-  password: xgoOsyyBv2Yn4w0hSqjsNqf5IGbIETZ6
-  port: 443
-  server: 5.253.41.46
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[Vless] 🇯🇵 JP VLESS-66 | free-nodes'
-  network: tcp
-  port: 38487
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: 138.2.50.155
-  servername: icloud.cdn-apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: bc9a8522-d884-41cd-de9c-9a29812b55ef
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-75 | free-nodes'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-77 | free-nodes'
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 212.102.54.45
-  type: ss
-- name: '[Vless] 未知 VLESS-79 | free-nodes'
-  network: ws
-  port: 443
-  server: 172.64.32.220
-  servername: freudd.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f028a8c0-6763-4558-aee3-2563db9d7825
-  ws-opts:
-    headers:
-      Host: freudd.info
-    path: /xxvclws
-- name: '[Vless] 🇬🇧 GB VLESS-81 | free-nodes'
-  network: ws
-  port: 443
-  server: brenna.ns.cloudflare.com
-  servername: terazhedi.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
-  ws-opts:
-    headers:
-      Host: terazhedi.info
-    path: /sghiyws
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-84 | free-nodes'
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.54.4.87
-  type: ss
-- name: '[Vless] 未知 VLESS-91 | free-nodes'
-  network: ws
-  port: 443
-  server: delilah.ns.cloudflare.com
-  servername: hazmkardan.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d37d61da-e50d-4f7f-9969-7f0136f97953
-  ws-opts:
-    headers:
-      Host: hazmkardan.info
-    path: /fwgisws
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-95 | free-nodes'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.140
-  type: ss
-- name: '[Trojan] 🇺🇸 US TROJAN-100 | free-nodes'
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 2890
-  server: 160.16.196.59
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 未知 SS-105 | free-nodes'
-  password: g5RQoxQuVtnFv3Xxsa8edPisXNPnyWKy
-  port: 443
-  server: 45.83.20.206
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[SS] 🇩🇪 DE SS-119 | free-nodes'
-  password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
-  port: 443
-  server: 87.121.162.249
-  type: ss
-- cipher: aes-256-gcm
-  name: '[SS] 🇺🇸 US SS-120 | free-nodes'
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 15.204.247.49
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[Vless] 未知 VLESS-127 | free-nodes'
-  network: tcp
-  port: 1243
-  reality-opts:
-    public-key: jcJeCbLo5JtfveFIQLV6WNm1148XzxDc0Rzy336hXy0
-    short-id: ff3cef7cdcf9
-  server: 45.92.176.55
-  servername: rontgen.fasssst.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d29bde62-daa4-4804-9c69-6e23a4150006
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[Vless] 未知 VLESS-128 | free-nodes'
-  network: tcp
-  port: 2243
-  reality-opts:
-    public-key: _ee-ouMazAzx7Q4_cYhWbu6pw53-8VVpt7tuBuCXziU
-    short-id: e3cbc70477
-  server: 45.92.176.55
-  servername: rontgen.fasssst.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d7e2c1ec-b2ba-4a4c-a73a-c08f5bd7923b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[Vless] 未知 VLESS-129 | free-nodes'
-  network: tcp
-  port: 28899
-  reality-opts:
-    public-key: UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY
-  server: 170.64.232.45
-  servername: s0.awsstatic.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: f61d9aee-63b8-439e-bebf-afaa53c015fd
-- name: '[Trojan] 未知 TROJAN-143 | free-nodes'
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
-  port: 443
-  server: hinet.mjt000.com
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-391 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.236.32
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-447 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.81.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-465 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 2890
-  server: 160.16.116.227
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-498 | free-nodes'
-  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
-  port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-528 | free-nodes'
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  sni: diningtable.electricbanana.click
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-533 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 3093
-  server: 160.16.130.66
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-585 | free-nodes'
-  password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
-  port: 443
-  server: download2hkt.windowsupdate.lol
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-610 | free-nodes'
-  password: 81d93f62-15a2-4994-adb9-0b5d906aac7e
-  port: 443
-  server: 31.72img.xyz
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-613 | free-nodes'
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 127
-  server: 160.16.116.227
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-620 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 127
-  server: 153.121.51.29
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-664 | free-nodes'
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: uk-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-763 | free-nodes'
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 4054
-  server: 160.16.136.130
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-812 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 3093
-  server: 160.16.72.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-815 | free-nodes'
-  password: BaeSzHdfJIR13l67
-  port: 11930
-  server: 70.34.218.149
-  skip-cert-verify: false
-  sni: softpillow.silentrocket.click
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-817 | free-nodes'
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 153.121.51.29
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-824 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.132.158
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-857 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.214.6
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-908 | free-nodes'
-  password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
-  port: 443
-  server: de-full.privateip.net
-  skip-cert-verify: false
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-967 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 127
-  server: 160.16.131.243
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-978 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.57.238
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-1005 | free-nodes'
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 3093
-  server: 153.121.45.139
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-1033 | free-nodes'
-  password: .+QAJot50sDi6mvb
-  port: 11790
-  server: 5.188.108.13
-  skip-cert-verify: false
-  sni: runningshoes.purpletornado.click
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-1203 | free-nodes'
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 3145
-  server: 160.16.144.208
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '[Trojan] 未知 TROJAN-1208 | free-nodes'
-  network: ws
-  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  port: 443
-  server: cf.zhetengsha.eu.org
-  skip-cert-verify: false
-  sni: _acme-challenge.2go.cloudns.be
-  type: trojan
-  ws-opts:
-    headers:
-      Host: _acme-challenge.2go.cloudns.be
-    path: /?ed=2560
 - name: '[Trojan] 未知 TROJAN-1248 | free-nodes'
   password: 7778e684-f435-4166-bf9e-0256cb28bf10
   port: 443
@@ -624,76 +162,48 @@ proxies:
   server: hk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: 🇭🇰 香港4|@stairnode-7umP
+- name: 🇭🇰 香港4|@stairnode-1omu
   server: 58.152.18.155
   port: 443
   type: trojan
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
-- name: 🇯🇵 日本|@stairnode-kGUl
-  server: 3.112.242.221
-  port: 48756
+- name: 🇭🇰 香港5|@stairnode-VaVn
+  server: 219.78.209.224
+  port: 443
   type: trojan
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
-- name: 🇯🇵 日本2|@stairnode-Ahz0
+- name: 🇯🇵 日本2|@stairnode-YxWS
   server: 160.16.107.37
   port: 3093
   type: trojan
   password: e2722c0fb503f8a592436c12bce0509a
   sni: www.nintendogames.net
   skip-cert-verify: false
-- name: 🇸🇬 新加坡|@stairnode-UIEj
+- name: 🇸🇬 新加坡|@stairnode-KSyI
   server: 160.16.150.76
   port: 3145
   type: trojan
   password: e2722c0fb503f8a592436c12bce0509a
   sni: www.nintendogames.net
   skip-cert-verify: false
-- name: 🇸🇬 新加坡3|@stairnode-rvWO
-  server: 16.162.21.116
-  port: 804
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国|@stairnode-2Ry6
+- name: 🇺🇸 美国|@stairnode-Ac6d
   server: 153.121.39.240
   port: 4054
   type: trojan
   password: e2722c0fb503f8a592436c12bce0509a
   sni: www.nintendogames.net
   skip-cert-verify: false
-- name: 🇺🇸 美国2|@stairnode-vPew
+- name: 🇺🇸 美国2|@stairnode-0Kbb
   server: 160.16.63.16
   port: 4054
   type: trojan
   password: e2722c0fb503f8a592436c12bce0509a
   sni: www.nintendogames.net
   skip-cert-verify: false
-- name: 🇺🇸 美国3|@stairnode-NbKB
-  server: 54.238.178.152
-  port: 2173
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-- name: '[Vless] 未知 VLESS-06 | free-nodes'
-  server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
-  port: 443
-  type: vless
-  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  reality-opts:
-    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
-    short-id: 55e6af1a35e64a98
-  servername: i2pd.website
-  client-fingerprint: chrome
-  network: tcp
 - name: '[SS] 未知 SS-10 | free-nodes'
   server: 193.135.174.135
   port: 990
@@ -730,20 +240,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 245f2c1d-a317-45a8-b230-e420566a7f62
-- name: '[Vless] 未知 VLESS-67 | free-nodes-M2Q2'
-  server: 146.19.143.8
-  port: 8443
-  type: vless
-  uuid: 787ae54e-40ad-4caf-899b-ad3a19ff1103
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  reality-opts:
-    public-key: UBwue-cEE6w4gTS4dngQng5JEykNTR6d9f65p6RyA2w
-    short-id: 50c860b05993532d
-  servername: discordapp.com
-  client-fingerprint: chrome
-  network: tcp
 - name: '[Vless] 🇺🇸 US VLESS-113 | free-nodes'
   server: 104.21.3.219
   port: 8443
@@ -758,27 +254,6 @@ proxies:
     path: /57ba2ab1
     headers:
       Host: ovhwuxian.pai50288.uk
-- name: '[Vless] 未知 VLESS-116 | free-nodes'
-  server: 217.16.24.170
-  port: 8443
-  type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  reality-opts:
-    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
-    short-id: 5540e44a53c3d01c
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  network: tcp
-- name: '[Trojan] 🇺🇸 US TROJAN-128 | free-nodes'
-  server: 160.16.214.6
-  port: 2890
-  type: trojan
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  sni: www.nintendogames.net
-  skip-cert-verify: false
 - name: '[Vless] 🇺🇸 US VLESS-133 | free-nodes'
   server: 216.106.176.106
   port: 8443
@@ -793,51 +268,36 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
   network: tcp
-- name: '[Trojan] 未知 TROJAN-140 | free-nodes-KE67'
+- name: '[Trojan] 未知 TROJAN-140 | free-nodes-Nr5W'
   server: download2hkt.windowsupdate.lol
   port: 443
   type: trojan
   password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb
   skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-280 | free-nodes-rueb'
+- name: '[Trojan] 未知 TROJAN-280 | free-nodes-P7Yz'
   server: it-full.privateip.net
   port: 443
   type: trojan
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-325 | free-nodes-OJnO'
-  server: 202.181.103.235
-  port: 2890
+- name: '[Trojan] 未知 TROJAN-533 | free-nodes-DAne'
+  server: 160.16.229.223
+  port: 3093
   type: trojan
   password: 76d630f2af6619c4a5de0ef953df3c6a
   sni: www.nintendogames.net
   skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-374 | free-nodes-KU8A'
-  server: 160.16.124.55
-  port: 2890
-  type: trojan
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-521 | free-nodes-jmht'
-  server: 160.16.223.205
-  port: 4054
-  type: trojan
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-614 | free-nodes-UpV5'
+- name: '[Trojan] 未知 TROJAN-614 | free-nodes-kF4E'
   server: jp-full.privateip.net
   port: 443
   type: trojan
   password: d9576e81-fc34-46f2-b624-0c1e99cde4be
   skip-cert-verify: false
-- name: '[Trojan] 未知 TROJAN-1216 | free-nodes-G1ft'
-  server: 153.121.65.107
-  port: 3169
+- name: '[Trojan] 未知 TROJAN-1344 | free-nodes-lZ9X'
+  server: tr-full.privateip.net
+  port: 443
   type: trojan
-  password: 79314e99f0a473fe86efc7827942ad00
-  sni: www.nintendogames.net
+  password: 4d5cc30d-df0f-4d9a-ab3c-6a70ab0ce361
   skip-cert-verify: false
 - name: 🇺🇸US-156.146.38.167-0256 | 192.433MB
   server: 156.146.38.167
@@ -905,18 +365,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸US-18.206.174.108-4984 | 44.467MB
-  server: 18.206.174.108
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US-173.234.29.2-0266 | 34.214MB
-  server: 173.234.29.2
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇺🇸US-104.192.226.106-0222 | 33.696MB
   server: 104.192.226.106
   port: 989
@@ -1031,12 +479,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: LT-45.87.175.154-0238 | 29.166MB
-  server: 45.87.175.154
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
 - name: IE-3.253.99.197-1011 | 29.093MB
   server: 3.253.99.197
   port: 443
@@ -1169,12 +611,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇫🇷FR-13.38.24.62-4929 | 25.184MB
-  server: 13.38.24.62
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: MD-94.131.104.147-0258 | 25.127MB
   server: 94.131.104.147
   port: 443
@@ -1199,12 +635,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: f8f7aCzcPKbsF8p3
-- name: 🇫🇷FR-15.236.142.160-4934 | 23.922MB
-  server: 15.236.142.160
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇫🇷FR-15.236.122.197-4930 | 23.687MB
   server: 15.236.122.197
   port: 443
@@ -1223,12 +653,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: HR-185.156.110.92-0394 | 22.992MB
-  server: 185.156.110.92
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn
 - name: 🇫🇷FR-51.44.165.171-4979 | 22.408MB
   server: 51.44.165.171
   port: 443
@@ -1283,6 +707,12 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp
+- name: 🇵🇱PL-45.15.126.19-5102 | 20.143MB
+  server: 45.15.126.19
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6Ts2ZDTQAf3hkFoB8AFufDwsGrlF4e2t
 - name: MD-89.221.225.15-0267 | 18.489MB
   server: 89.221.225.15
   port: 443
@@ -1325,8 +755,8 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: LV-46.183.217.204-0296 | 12.698MB
-  server: 46.183.217.204
+- name: PK-156.59.243.6-0283 | 13.705MB
+  server: 156.59.243.6
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -1345,6 +775,13 @@ proxies:
   password: JIhN6rBKkaEboLNXVSv5rq
 - name: 🇯🇵JP-153.121.53.187-4968 | 10.836MB
   server: 153.121.53.187
+  port: 3093
+  type: trojan
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇯🇵JP-153.121.65.107-0297 | 10.331MB
+  server: 153.121.65.107
   port: 3093
   type: trojan
   password: 76d630f2af6619c4a5de0ef953df3c6a
@@ -1374,34 +811,79 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: MD-176.123.1.175-0302 | 7.039MB
+  server: 176.123.1.175
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: LT-45.87.175.65-0377 | 6.252MB
   server: 45.87.175.65
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇵🇱PL-217.30.10.18-4863 | 5.709MB
-  server: 217.30.10.18
-  port: 9033
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
 - name: 🇵🇱PL-217.30.10.18-4746 | 5.624MB
   server: 217.30.10.18
   port: 9019
   type: ss
   cipher: aes-256-cfb
   password: GA9KzeEgvfxNrgmM
-- name: 🇨🇦CA-45.154.204.13-0295
-  server: ssca.irundns.net
+- name: 🇸🇬SG-167.150.100.115-0304 | 5.572MB
+  server: 167.150.100.115
   port: 443
-  type: ssr
-  cipher: aes-128-cfb
-  password: $$Turb0VPN$$
-  protocol: auth_aes128_md5
-  obfs: http_post
-  protocol-param: ''
-  obfs-param: ''
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
+- name: 🇺🇸US-23.95.75.146-0326 | 4.646MB
+  server: 23.95.75.146
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
+- name: 🇰🇷KR-141.164.45.187-0310 | 4.462MB
+  server: 141.164.45.187
+  port: 7001
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇯🇵JP-153.121.51.29-4966 | 4.358MB
+  server: 153.121.51.29
+  port: 2890
+  type: trojan
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+- name: 🇵🇱PL-217.30.10.18-0331 | 3.905MB
+  server: 217.30.10.18
+  port: 9060
+  type: ss
+  cipher: aes-256-cfb
+  password: ueLXVkvh4hckhErQ
+- name: 🇺🇸US-23.95.72.81-0313 | 3.29MB
+  server: 23.95.72.81
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: UAMVtHm54uahd6SiN5WcD16rsPSdabPG
+- name: PY-38.165.233.93-0306 | 3.007MB
+  server: 38.165.233.93
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇩🇰DK-192.36.27.94-0311 | 2.485MB
+  server: 192.36.27.94
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: KZ-45.159.250.190-0369 | 2.333MB
+  server: 45.159.250.190
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇸🇪SE-192.71.249.78-0317
   server: 192.71.249.78
   port: 989
@@ -1474,12 +956,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇲🇦MA-154.70.207.97-0368
-  server: 154.70.207.97
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇳🇱NL-193.29.139.251-0370
   server: 193.29.139.251
   port: 8080
@@ -1522,24 +998,12 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇧🇷BR-38.54.57.90-0398
-  server: 38.54.57.90
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
 - name: 🇲🇦MA-188.214.157.30-0401
   server: 188.214.157.30
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇺🇸US-71.19.148.143-0402
-  server: 71.19.148.143
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: p78naCf2EfOlRSLTX0wFVx
 - name: 🇮🇳IN-134.209.147.198-0404
   server: 134.209.147.198
   port: 989
@@ -1588,444 +1052,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇹🇼TW-154.223.20.79-4754
-  server: 154.223.20.79
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇯🇵JP-18.183.10.91-4766
-  server: ss.022.node-for-bigairport.win
-  port: 15099
-  type: ss
-  cipher: aes-256-gcm
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-- name: 🇩🇿DZ-197.140.29.76-4789
-  server: 197.140.29.76
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇹🇼TW-223.165.4.173-4813
-  server: 223.165.4.173
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱NL-208.67.105.196-4879
-  server: 208.67.105.196
-  port: 42029
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-- name: 🇻🇳VN-103.186.154.32-4897
-  server: 103.186.154.32
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.19-4899
-  server: 103.186.155.19
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.30-4900
-  server: 103.186.154.30
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.21-4901
-  server: 103.186.155.21
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.133-4902
-  server: 103.186.155.133
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.29-4904
-  server: 103.186.154.29
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.22-4906
-  server: 103.186.154.22
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.31-4907
-  server: 103.186.154.31
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.26-4908
-  server: 103.186.154.26
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.28-4909
-  server: 103.186.154.28
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.38-4910
-  server: 103.186.154.38
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.35-4911
-  server: 103.186.154.35
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.21-4912
-  server: 103.186.154.21
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.20-4914
-  server: 103.186.155.20
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.37-4915
-  server: 103.186.154.37
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.18-4916
-  server: 103.186.154.18
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.36-4917
-  server: 103.186.154.36
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.33-4918
-  server: 103.186.154.33
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.19-4919
-  server: 103.186.154.19
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.25-4920
-  server: 103.186.154.25
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.24-4921
-  server: 103.186.154.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.24-4922
-  server: 103.186.155.24
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.27-4923
-  server: 103.186.154.27
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.23-4924
-  server: 103.186.155.23
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.25-4925
-  server: 103.186.155.25
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇫🇷FR-13.38.73.145-4935
-  server: 13.38.73.145
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷FR-13.39.112.212-4936
-  server: 13.39.112.212
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪IE-54.246.35.116-4950
-  server: 54.246.35.116
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪SE-13.61.13.231-4976
-  server: 13.61.13.231
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸US-98.89.32.62-4981
-  server: 98.89.32.62
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇻🇳VN-103.186.155.205-4987
-  server: 103.186.155.205
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.83-4988
-  server: 103.186.155.83
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.63-4989
-  server: 103.186.154.63
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.50-4990
-  server: 103.186.154.50
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.107-4991
-  server: 103.186.155.107
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.55-4993
-  server: 103.186.154.55
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.40-4994
-  server: 103.186.154.40
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.63-4995
-  server: 103.186.155.63
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.141-4996
-  server: 103.186.155.141
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.108-4997
-  server: 103.186.155.108
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.209-4998
-  server: 103.186.154.209
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.234-4999
-  server: 103.186.154.234
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.32-5000
-  server: 103.186.155.32
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.5-5001
-  server: 103.186.155.5
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.190-5002
-  server: 103.186.154.190
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.26-5003
-  server: 103.186.155.26
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.142-5004
-  server: 103.186.154.142
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.147-5005
-  server: 103.186.154.147
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.126-5006
-  server: 103.186.155.126
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.4-5007
-  server: 103.186.154.4
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.17-5008
-  server: 103.186.155.17
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.58-5009
-  server: 103.186.154.58
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.236-5010
-  server: 103.186.155.236
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.119-5011
-  server: 103.186.155.119
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.213-5012
-  server: 103.186.154.213
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.34-5013
-  server: 103.186.155.34
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.151-5014
-  server: 103.186.154.151
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.191-5015
-  server: 103.186.154.191
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.44-5016
-  server: 103.186.154.44
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.235-5017
-  server: 103.186.154.235
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.249-5018
-  server: 103.186.154.249
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.110-5019
-  server: 103.186.155.110
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.232-5020
-  server: 103.186.154.232
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.3-5021
-  server: 103.186.155.3
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.136-5022
-  server: 103.186.155.136
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.46-5023
-  server: 103.186.155.46
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.155.50-5024
-  server: 103.186.155.50
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.250-5025
-  server: 103.186.154.250
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
 - name: 🇻🇳VN-103.186.154.192-5026
   server: 103.186.154.192
   port: 38388
@@ -2038,60 +1064,18 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇭🇰HK-47.242.140.52-5059
-  server: 47.242.140.52
-  port: 48219
-  type: vmess
-  uuid: 006893c6-79b1-4c44-94ff-b8bbea065f1f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🇭🇰HK-47.242.140.52-5060
-  server: 47.242.140.52
-  port: 9756
-  type: vmess
-  uuid: c77628dd-51e7-4996-a408-aaab8baaf79e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🇭🇰HK-47.242.140.52-5062
-  server: 47.242.140.52
-  port: 34815
-  type: vmess
-  uuid: 1a46b66c-6ba9-4e9c-aa0b-0ebac2b69e32
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🇵🇱PL-217.30.10.70-5084
+- name: 🇭🇰HK-103.149.183.12-5048
+  server: 103.149.183.12
+  port: 8388
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇵🇱PL-217.30.10.70-5091
   server: 217.30.10.70
-  port: 9050
+  port: 9020
   type: ss
   cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
-- name: 🇭🇰HK-8.218.199.111-5097
-  server: 8.218.199.111
-  port: 8080
-  type: vmess
-  uuid: f55db42d-ee52-4a47-880b-6f7b123ab222
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  password: BNmAXXxAHYpTRdzu
 - name: 🇺🇸US-149.30.232.103-5115
   server: 149.30.232.103
   port: 15097
@@ -2116,6 +1100,18 @@ proxies:
   network: ws
   ws-opts:
     path: /arki?ed=2048
+- name: 🇸🇨SC-156.238.238.194-5117
+  server: 156.238.238.194
+  port: 47296
+  type: vmess
+  uuid: 0524236a-e217-4cf3-9223-968a290ffce7
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇺🇸US-149.30.232.103-5118
   server: 149.30.232.103
   port: 18393
@@ -2488,12 +1484,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN-103.186.154.67-5184
-  server: 103.186.154.67
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
 - name: 🇻🇳VN-103.186.154.73-5185
   server: 103.186.154.73
   port: 38388
@@ -2544,6 +1534,768 @@ proxies:
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
 - name: 🇻🇳VN-103.186.154.198-5193
   server: 103.186.154.198
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.177-5194
+  server: 103.186.154.177
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.202-5195
+  server: 103.186.154.202
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.201-5196
+  server: 103.186.154.201
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.204-5197
+  server: 103.186.154.204
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.200-5198
+  server: 103.186.154.200
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.211-5199
+  server: 103.186.154.211
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.226-5200
+  server: 103.186.154.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.205-5201
+  server: 103.186.154.205
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.208-5202
+  server: 103.186.154.208
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.210-5203
+  server: 103.186.154.210
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.224-5204
+  server: 103.186.154.224
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.219-5205
+  server: 103.186.154.219
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.233-5207
+  server: 103.186.154.233
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.227-5208
+  server: 103.186.154.227
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.212-5209
+  server: 103.186.154.212
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.229-5210
+  server: 103.186.154.229
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.244-5212
+  server: 103.186.154.244
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.214-5213
+  server: 103.186.154.214
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.241-5214
+  server: 103.186.154.241
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.246-5215
+  server: 103.186.154.246
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.254-5216
+  server: 103.186.154.254
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.238-5217
+  server: 103.186.154.238
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.252-5219
+  server: 103.186.154.252
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.248-5221
+  server: 103.186.154.248
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.18-5222
+  server: 103.186.155.18
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.13-5224
+  server: 103.186.155.13
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.4-5226
+  server: 103.186.155.4
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.65-5238
+  server: 103.186.155.65
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.232-5239
+  server: 103.186.155.232
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.120-5240
+  server: 103.186.155.120
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.48-5241
+  server: 103.186.155.48
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.130-5242
+  server: 103.186.155.130
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.111-5243
+  server: 103.186.155.111
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.122-5244
+  server: 103.186.155.122
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.225-5245
+  server: 103.186.155.225
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.150-5246
+  server: 103.186.155.150
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.58-5247
+  server: 103.186.155.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.183-5248
+  server: 103.186.155.183
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.240-5249
+  server: 103.186.155.240
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.220-5250
+  server: 103.186.155.220
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.230-5251
+  server: 103.186.155.230
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.235-5252
+  server: 103.186.155.235
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.142-5253
+  server: 103.186.155.142
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.237-5254
+  server: 103.186.155.237
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.147-5255
+  server: 103.186.155.147
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.231-5256
+  server: 103.186.155.231
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.239-5257
+  server: 103.186.155.239
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.145-5258
+  server: 103.186.155.145
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.121-5259
+  server: 103.186.155.121
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.104-5260
+  server: 103.186.155.104
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.157-5261
+  server: 103.186.154.157
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.228-5262
+  server: 103.186.155.228
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.152-5263
+  server: 103.186.154.152
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.141-5264
+  server: 103.186.154.141
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.170-5265
+  server: 103.186.154.170
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.56-5266
+  server: 103.186.155.56
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.47-5267
+  server: 103.186.154.47
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.109-5268
+  server: 103.186.155.109
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.15-5269
+  server: 103.186.155.15
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.150-5270
+  server: 103.186.154.150
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.161-5271
+  server: 103.186.154.161
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.209-5272
+  server: 103.186.155.209
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.53-5273
+  server: 103.186.154.53
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.197-5275
+  server: 103.186.154.197
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.214-5276
+  server: 103.186.155.214
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.112-5277
+  server: 103.186.155.112
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.217-5278
+  server: 103.186.154.217
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.186-5279
+  server: 103.186.154.186
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.52-5280
+  server: 103.186.155.52
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.70-5281
+  server: 103.186.154.70
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.216-5282
+  server: 103.186.154.216
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.12-5283
+  server: 103.186.155.12
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.156-5284
+  server: 103.186.155.156
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.62-5285
+  server: 103.186.154.62
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.194-5286
+  server: 103.186.154.194
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.31-5287
+  server: 103.186.155.31
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.172-5288
+  server: 103.186.154.172
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.175-5289
+  server: 103.186.154.175
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.41-5290
+  server: 103.186.154.41
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.34-5291
+  server: 103.186.154.34
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.17-5292
+  server: 103.186.154.17
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.56-5293
+  server: 103.186.154.56
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.52-5294
+  server: 103.186.154.52
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.14-5295
+  server: 103.186.154.14
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.69-5296
+  server: 103.186.154.69
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.145-5297
+  server: 103.186.154.145
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.76-5298
+  server: 103.186.154.76
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.139-5299
+  server: 103.186.154.139
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.183-5300
+  server: 103.186.154.183
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.184-5301
+  server: 103.186.154.184
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.165-5302
+  server: 103.186.154.165
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.80-5303
+  server: 103.186.154.80
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.199-5304
+  server: 103.186.154.199
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.185-5305
+  server: 103.186.154.185
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.188-5306
+  server: 103.186.154.188
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.206-5307
+  server: 103.186.154.206
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.207-5308
+  server: 103.186.154.207
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.218-5309
+  server: 103.186.154.218
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.230-5310
+  server: 103.186.154.230
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.231-5311
+  server: 103.186.154.231
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.221-5312
+  server: 103.186.154.221
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.106-5313
+  server: 103.186.155.106
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.236-5314
+  server: 103.186.154.236
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.242-5315
+  server: 103.186.154.242
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.77-5316
+  server: 103.186.154.77
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.245-5317
+  server: 103.186.154.245
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.247-5318
+  server: 103.186.154.247
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.16-5319
+  server: 103.186.155.16
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.38-5320
+  server: 103.186.155.38
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.27-5321
+  server: 103.186.155.27
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.28-5322
+  server: 103.186.155.28
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.8-5323
+  server: 103.186.155.8
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.49-5324
+  server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.51-5325
+  server: 103.186.155.51
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.62-5326
+  server: 103.186.155.62
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.68-5327
+  server: 103.186.155.68
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.42-5328
+  server: 103.186.155.42
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.39-5329
+  server: 103.186.155.39
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.71-5330
+  server: 103.186.155.71
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.105-5331
+  server: 103.186.155.105
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.67-5332
+  server: 103.186.155.67
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.82-5333
+  server: 103.186.155.82
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.102-5334
+  server: 103.186.155.102
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.101-5335
+  server: 103.186.155.101
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.127-5336
+  server: 103.186.155.127
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.220-5337
+  server: 103.186.154.220
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.155.114-5338
+  server: 103.186.155.114
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -2836,6 +2588,12 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN-103.186.154.66-5387
+  server: 103.186.154.66
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
 - name: 🇻🇳VN-103.186.155.238-5388
   server: 103.186.155.238
   port: 38388
@@ -2920,572 +2678,768 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  type: ssr
-  server: 107.151.182.253
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-  protocol: origin
-  obfs: plain
-- name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
-  type: ssr
-  server: 79.127.233.170
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: IL_e3ed0_0004
-  server: 185.136.132.171
-  port: 24170
-  type: vless
-  uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: speedtest.net
-  reality-opts:
-    public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
-    short-id: 2fb2106a629b
-  udp: true
-- name: RU_e3ed0_0009
-  server: 178.236.16.98
-  port: 35728
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yahoo.com
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  udp: true
-- name: SG_e3ed0_0010
-  server: 213.35.126.34
-  port: 10808
-  type: socks5
-  udp: true
-- name: TW_e3ed0_0011
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-  tls: true
-  udp: true
-- alterId: 2
+- type: vmess
+  name: 🇺🇸_美国_38
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  network: tcp
   cipher: auto
-  name: 13|香港|@ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: DE-ha27
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 73856b73-19d2-47e6-b991-5eaa421161ea
-  security: tls
-  tls: true
-  sni: DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /admin?ed=1024
-    headers:
-      Host: DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR.
-- name: HK
-  type: ss
-  server: 194.246.114.101
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
-  udp: true
-- name: DE-WZmQ
-  type: vless
-  server: 91.98.80.2
-  port: 8880
-  uuid: e100a774-bd63-4d61-8a43-6db1acfa89fb
-  security: none
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-- name: DE-Y9e8
-  type: ss
-  server: 84.200.91.158
-  port: 443
-  cipher: aes-256-gcm
-  password: 5aabd1ec-043f-4c29-8307-4d4dd19923e9
-  udp: true
-- name: SG
-  type: vless
-  server: free-server.techsonic.cloud
-  port: 443
-  uuid: a4cb890e-8251-488e-9439-3403c9a58e55
-  security: tls
-  tls: true
-  sni: free-server.techsonic.cloud
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-- name: US-utvz
-  type: vless
-  server: ovhwuxian.pai50288.uk
-  port: 8443
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  security: tls
-  tls: true
-  sni: ovhwuxian.pai50288.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /57ba2ab1
-    headers:
-      Host: ovhwuxian.pai50288.uk
-- name: GB-QY29
-  type: vless
-  server: 51.68.198.51
-  port: 8080
-  uuid: ba935369-17f4-4e04-bd32-f1cf8b6b5110
-  security: none
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /YUYETrenyklxeoyemeWFCrneerV
-    headers:
-      Host: ''
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: France_None_hysteria_81
-  port: 26691
-  protocol: udp
-  server: 62.210.196.68
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- name: '🇳🇱 - NL - @freeOnlineVPN #4'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35000
-  server: 206.71.158.37
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: '💎کانفیگ های بیشتر در چنل تلگرا... #1'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36300
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: '💎کانفیگ های بیشتر در چنل تلگرا... #2'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36600
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: All-@V2rayAlpha--7
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 206.71.158.40
-  skip-cert-verify: true
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: '🇳🇱 - NL - @freeOnlineVPN #7'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 206.71.158.41
-  skip-cert-verify: true
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: telegram » mainv𝟮ray
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 77.90.41.197
-  skip-cert-verify: true
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: ⭕40@oneclickvpnkeys
-  password: dongtaiwang.com
-  port: 5355
-  server: 163.172.21.105
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: ⚛️3@oneclickvpnkeys
-  password: dongtaiwang.com
-  port: 33880
-  server: 195.154.206.231
-  skip-cert-verify: true
-  sni: apple.com
-  tls: false
-  type: hysteria2
-- name: '@Hddify #3'
-  password: dongtaiwang.com
-  port: 5355
-  server: 51.159.111.32
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '@V2ray_confing33'
-  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
-  port: 1743
-  server: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
-  skip-cert-verify: false
-  sni: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: '🔸@IRAN_V2RAY1💘 #1'
-  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
-  port: 1743
-  server: c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk
-  skip-cert-verify: false
-  sni: c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: '🔸@IRAN_V2RAY1💘 #2'
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-  port: 1743
-  server: 14ff4864-t4x400-tcjtj6-d70y.la.shifen.uk
-  skip-cert-verify: false
-  sni: 14ff4864-t4x400-tcjtj6-d70y.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: All-@V2rayAlpha--33
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 1743
-  server: 227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: All-@V2rayAlpha--46
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 1743
-  server: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
-  skip-cert-verify: false
-  sni: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: 🇳🇱@FreakConfig
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
-  password: Telegram-->@Ln2Ray
-  port: 45000
-  server: 206.71.158.23
-  skip-cert-verify: true
-  sni: gavazn.55994421.xyz
-  tls: false
-  type: hysteria2
-- name: '@Daily_Configs'
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
-  password: Telegram-->@Ln2Ray
-  port: 45000
-  server: gavazn.lnmarketplace.net
-  skip-cert-verify: true
-  sni: gavazn.55994421.xyz
-  tls: false
-  type: hysteria2
-- name: '🇳🇱 - NL - @freeOnlineVPN #5'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35200
-  server: 206.71.158.37
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: '🔸@IRAN_V2RAY1💘 #5'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36300
-  server: 206.71.158.37
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: 'All--@IRAN_V2RAY1 #4'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36400
-  server: 206.71.158.37
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: '🇳🇱 - NL - @freeOnlineVPN #6'
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36600
-  server: 206.71.158.37
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  tls: false
-  type: hysteria2
-- name: '🔸@IRAN_V2RAY1💘 #11'
-  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-  port: 1743
-  server: ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk
-  skip-cert-verify: false
-  sni: ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: 'All--@IRAN_V2RAY1🇺🇸 #5'
-  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  port: 1743
-  server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
-  skip-cert-verify: false
-  sni: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
-  tls: false
-  type: hysteria2
 - type: vless
-  name: 🇹🇷_土耳其
-  server: deu378.worldunlocker.org
-  port: 8443
-  uuid: 88b7b2a7-2ef6-4570-a8a3-6319a78ecfab
-  network: ws
-  servername: deu378.worldunlocker.org
+  name: 🇷🇴_罗马尼亚
+  server: jrghxqxyoy-518237151-direct.bahame.co
+  port: 443
+  uuid: jrghxqxyoy
+  network: tcp
+  servername: jrghxqxyoy-518237151-direct.bahame.co
   tls: true
   encryption: none
-  ws-opts:
-    path: /ws-vless/
-  client-fingerprint: chrome
-- name: 🇩🇪[openproxylist.com] vmess-DE
-  type: vmess
-  server: cpanel.navar2.ir
-  port: 100
-  uuid: bbecd967-a6d2-4766-910e-fd84a8b71809
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: uploadboy.com
-- name: 🇩🇪[openproxylist.com] vless-DE-Roqc
-  type: vless
-  server: 91.98.80.2
-  port: 8881
-  uuid: 06648811-a502-4535-ac44-5b034094ee2e
-  security: none
-  tls: false
-  sni: ''
-  skip-cert-verify: false
-  network: tcp
-  ws-opts: {}
-- name: 🇺🇸[openproxylist.com] vmess-US
-  type: vmess
-  server: 47.253.197.26
-  port: 12056
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇧🇷[openproxylist.com] vmess-BR
-  type: vmess
-  server: 38.180.16.86
-  port: 36236
-  uuid: a58bc1a5-8c18-49ff-9453-c331b52f45dc
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇹🇭[openproxylist.com] vmess-TH
-  type: vmess
-  server: n1749032917.kzxds.cn
-  port: 443
-  uuid: cd66eeea-643f-4826-a4f3-0d2f57a5ad06
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: n1749032917.kzxds.cn
-- name: 🇭🇰[openproxylist.com] vmess-HK
-  type: vmess
-  server: 8.218.116.26
-  port: 32228
-  uuid: e4767e9f-ed00-4f31-a984-a918bdd9b09c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇸🇬[openproxylist.com] ss-SG-pnOW
-  type: ss
-  server: 38.89.142.56
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 哈萨克斯坦 - 阿拉木圖 - PS Internet Company LLP - 1
-  server: 31.3.209.183
-  type: ss
-  country: 🇬🇧GB
-  port: 28212
-  password: Kmn7dHPw5wNfkqQMPcGWQA
-  cipher: chacha20-ietf-poly1305
-  delay: 1155
-- name: 法国 - 巴黎 - Amazon Technologies Inc. - 6
-  server: 35.180.247.200
-  type: ss
-  country: 🇫🇷FR
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 2347
-- name: 法国 - 巴黎 - SCALEWAY - 2
-  server: 195.154.202.111
-  type: trojan
-  country: 🇫🇷FR
-  port: 58290
-  password: 90y2l3mu48d10uy3ibad
-  sni: ads.x5.ru
+  flow: xtls-rprx-vision
+- type: hysteria
+  name: 🇫🇷_FR_法国_1
+  server: 62.210.10.186
+  port: 35511
+  auth-str: dongtaiwang.com
+  protocol: udp
+  sni: apple.com
+  up: '11'
+  down: '55'
   skip-cert-verify: true
+  alpn:
+  - h3
+- type: vless
+  name: 🇺🇸_US_美国_1
+  server: V2ngnet.heloisfood.ir
+  port: 4488
+  uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
+  network: grpc
+  encryption: none
+  grpc-opts:
+    grpc-service-name: '@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet'
+- type: vless
+  name: 🇺🇸_US_美国_4
+  server: V2ngfast.heloisfood.ir
+  port: 2718
+  uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
+  network: grpc
+  encryption: none
+  grpc-opts:
+    grpc-service-name: '@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast'
+- name: 152.67.192.242_Gemini_Claude
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: test
+- name: 🇺🇸US-37.19.198.236-0265 | 198.881MB
+  server: 37.19.198.236
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.244-0382 | 149.257MB
+  server: 37.19.198.244
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-37.19.198.160-0266 | 99.74MB
+  server: 37.19.198.160
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸US-173.244.56.9-0270 | 57.629MB
+  server: 173.244.56.9
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇫🇷FR-45.158.171.151-0289 | 45.391MB
+  server: beesyar.org
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: LT-45.87.175.164-0288 | 42.877MB
+  server: 45.87.175.164
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: LT-45.87.175.181-0420 | 41.479MB
+  server: 45.87.175.181
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- name: LT-45.87.175.166-0292 | 40.267MB
+  server: 45.87.175.166
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇺🇸US-173.244.56.6-0271 | 39.457MB
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US_165
+  type: vmess
+  server: 208.76.223.218
+  port: 27092
+  uuid: a0596ba6-72a3-4366-8992-77088da65bd8
+  alterId: 0
+  cipher: auto
+  network: none
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_169
+  type: vmess
+  server: 208.76.223.218
+  port: 40433
+  uuid: d8fd8955-78db-49ba-d86f-3e4729f6ac4d
+  alterId: 0
+  cipher: auto
+  network: none
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_173
+  type: vmess
+  server: 216.227.168.157
+  port: 45263
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: 🇺🇸 US_180
+  type: vmess
+  server: 216.238.87.47
+  port: 27502
+  uuid: b8155ce4-7e08-4c40-800f-8671312b7124
+  alterId: 0
+  cipher: auto
+  network: none
+  tls: false
+  sni: ''
+  ws-opts: {}
+- name: '[Hysteria2] 🇦🇪 迪拜|高速专线|hy2'
+  server: 193.123.76.84
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
   udp: true
-  delay: 906
-- name: 美国 - Ashburn - Amazon Technologies Inc. - 1
-  server: 54.144.64.227
-  type: ss
-  country: 🇺🇸US
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 935
-- name: 美国 - Ashburn - Amazon.com - 7
-  server: 23.22.182.151
-  type: ss
-  country: 🇺🇸US
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  delay: 1473
-- name: 越南 - Hải Dương - FASTLY - 8
-  server: 103.186.155.66
-  type: ss
-  port: 38388
+- name: '[Hysteria2] 🇦🇺 澳大利亚2|高速专线|hy2'
+  server: 158.179.18.251
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
   udp: true
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-  delay: 1266
-- name: 台湾1
-  server: tw2-cdn-route.couldflare-cdn.com
+- name: '[Hysteria2] 🇦🇺 澳大利亚3|高速专线|hy2'
+  server: 159.13.35.245
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇦🇺 澳大利亚|高速专线|hy2'
+  server: 152.69.180.226
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇨🇭 瑞士苏黎世|高速专线|hy2'
+  server: 152.67.95.183
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇬🇧 英国|高速专线|hy2|0.1倍'
+  server: 85.159.92.99
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港01|CM|CU|'
+  server: 103.197.71.112
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港02|CM|CU|'
+  server: 103.197.71.113
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港03|CM|CU|'
+  server: 103.197.71.114
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港04|CM|CU|'
+  server: 103.197.71.115
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港05|CM|CU|'
+  server: 103.197.71.116
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港06|CM|CU|'
+  server: 103.197.71.117
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇭🇰 香港07|CM|CU|'
+  server: 103.197.71.75
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇮🇳 印度|01|0.1倍'
+  server: 104.18.20.69
   port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 台湾3
-  server: tw4-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 日本2
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 日本3
-  type: http
-  server: jp105-cdn-route.couldflare-cdn.com
-  port: 443
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-  tls: true
-  skip-cert-verify: false
-- name: 香港1
-  server: hkpc2-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: edgetunnel
-  server: shopify.com
-  port: 443
-  client-fingerprint: randomized
   type: vless
-  uuid: ba55ef37-c33c-4a8f-aafa-2abc85312863
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
   tls: true
-  tfo: false
-  skip-cert-verify: false
-  servername: apk.arises.dynv6.net
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /pq/in1
     headers:
-      Host: apk.arises.dynv6.net
-- name: 美国1
-  server: usgp2-cdn-route.couldflare-cdn.com
+      Host: in1s-s.pqvip.top
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京01|高速专线'
+  server: unamecf.xn--ghqu5fm27b67w.com
   port: 443
-  type: http
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
   tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国3
-  server: usgp3-cdn-route.couldflare-cdn.com
+  servername: ujp1.xn--ghqu5fm27b67w.com
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /pq/jp1
+    headers:
+      Host: ujp1.xn--ghqu5fm27b67w.com
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京2hy2|CM|CU|'
+  server: pq.hy.jp2.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京2|CM|CU|'
+  server: pq.vmjp2.yydjc.top
   port: 443
-  type: http
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
   tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: asLJREsp9L0JbURQPIhFxc6bZIgpunEOjOJeHv3YcEs
+    short-id: b0fbe0f0
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京3hy2|CM|CU|'
+  server: pq.hy.jp3.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京3|CM|CU|'
+  server: pq.vmjp3.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pR8CV43xvSgvzSXPVLCVomjw-yZvNyqU32kietO2pEc
+    short-id: a6115a2c
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京4hy2|CM|CU|'
+  server: pq.hy.jp4.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京4|CM|CU|'
+  server: pq.vmjp4.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: FrLhPuCVfzdM5rppzxHXQ5BZSGf1YHrXgo-cCtecGSo
+    short-id: f3b38af2
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京5hy2|CT|CU|'
+  server: pq.hy.jp5.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京7hy2|CT|CU|'
+  server: pq.hy.jp6.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Hysteria2] 🇯🇵 日本东京hy2|CM|CU|'
+  server: pq.hy.jp.yydjc.top
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京|10|CT|CU|0.1倍'
+  server: pq.vmjp5.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: FrLhPuCVfzdM5rppzxHXQ5BZSGf1YHrXgo-cCtecGSo
+    short-id: f3b38af2
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京|11|CT|CU|0.1倍'
+  server: pq.vmjp6.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: pR8CV43xvSgvzSXPVLCVomjw-yZvNyqU32kietO2pEc
+    short-id: a6115a2c
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇯🇵 日本东京|CM|CU|'
+  server: pq.vmjp.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ybBxu1pW3O9Me954LCDfXgHW6lIYepAbnla82yaZ5HE
+    short-id: 6a1faecb
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇯🇵 日本高速|01|0.1倍'
+  server: 69.84.182.18
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /pq/jp1
+    headers:
+      Host: jpa1.xn--ghqu5fm27b67w.com
+  udp: true
+- name: '[Hysteria2] 🇰🇷 韩国|高速专线|hy2'
+  server: 146.56.164.36
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇰🇷 韩国首尔01'
+  server: 193.123.227.125
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: P--AseuV7sGvgy7YJ8iX58GxeP5-M2oq0Mq2YxPAXRs
+    short-id: f00d40f38482
+  servername: buylite.music.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 AWS新加坡01|CM|CU|'
+  server: pq.aws59.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mnshlVo5tkzYbmEB9xrgmUHwYETnXLAjjlGAssqaDGI
+    short-id: 436299c6
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 AWS新加坡02|CM|CU|'
+  server: pq.aws60.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: xjWkdgeetCnB1-kHqwVnAaSUqg4qK9TFWQlamW8FSRI
+    short-id: e2e15173
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 AWS新加坡03|CM|CU|'
+  server: pq.aws61.yydjc.top
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9076EbD5vM8kATc_08QvDiqZF5KHTM_LaSrMOvcwfHw
+    short-id: 57b7989c
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[Vless] 🇸🇬 新加坡01|高速专线'
+  server: 104.18.46.50
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  servername: sgp1.pqvip.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pq/sg1
+    headers:
+      Host: sgp1.pqvip.top
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡2|高速专线|hy2'
+  server: 203.27.106.148
+  port: 60000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 60000-65530
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡3|高速专线|hy2'
+  server: 152.69.220.212
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇸🇬 新加坡4|高速专线|hy2'
+  server: 158.178.236.104
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|01|CT|CU|CM|0.1倍'
+  server: pq.us1.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|02|CT|CU|CM|0.1倍'
+  server: pq.us2.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|03|CT|CU|CM|0.1倍'
+  server: pq.us3.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: tv.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|04|CT|CU|CM|0.1倍'
+  server: pq.us4.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|05|CT|CU|CM|0.1倍'
+  server: pq.us5.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|06|CT|CU|CM|0.1倍'
+  server: pq.us6.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|07|CT|CU|CM|0.1倍'
+  server: pq.us7.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|08|CT|CU|CM|0.1倍'
+  server: pq.us8.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|09|CT|CU|CM|0.1倍'
+  server: pq.us9.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: www.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Hysteria2] 🇺🇸 美国|10|CT|CM|0.1倍'
+  server: pq.us10.globals-download.com
+  port: 35000
+  type: hysteria2
+  password: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  auth: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  ports: 35000-39000
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞01|CT|CM|CU'
+  server: 134.195.101.122
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5GuO4I_E15w2KmNriq2iJgCNRzmUaf2czrSyyxDaJiI
+    short-id: 870ba0fa
+  servername: download.visualstudio.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞02|CT|CM|CU'
+  server: 134.195.101.182
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: lnhtAqxtQkbLmxHuqSNAFawUuPO-06b_0XiMUO0omG8
+    short-id: 8d3c4b88
+  servername: download.visualstudio.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞03|CT|CM|CU'
+  server: 134.195.101.191
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XHMmGYsdXLNQ5CNZBAmzKReempIwKnE74wVuZmYGKAA
+    short-id: 50941934
+  servername: myvs.download.prss.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国圣何塞|01|0.1倍'
+  server: 104.18.46.88
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  servername: usa1.xn--ghqu5fm27b67w.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pq/us1
+    headers:
+      Host: usa1.xn--ghqu5fm27b67w.com
+  udp: true
+- name: '[Vless] 🇺🇸 美国洛杉矶04|CT|CM|CU'
+  server: 203.10.96.138
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU
+    short-id: fd26d49a
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: '[Vless] 🇺🇸 美国阿什本|01|0.1倍'
+  server: 69.84.182.108
+  port: 443
+  type: vless
+  uuid: 5bee0ecc-fbda-43c5-8f7a-20339d854166
+  tls: true
+  servername: pq-us4.globals-download.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pq/us4
+    headers:
+      Host: pq-us4.globals-download.com
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -3498,506 +3452,506 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 🇺🇸US-54.159.62.233-5107 | 59.71MB
-  - 🇺🇸US-54.227.38.247-4985 | 60.113MB
-  - 🇺🇸US-98.89.32.62-4981
-  - 🇺🇸[openproxylist.com] vmess-US
-  - '[Trojan] 未知 TROJAN-140 | free-nodes-KE67'
-  - '[Trojan] 未知 TROJAN-585 | free-nodes'
-  - 🇺🇸US-54.91.94.165-4975 | 32.345MB
-  - 美国 - Ashburn - Amazon Technologies Inc. - 1
-  - 🇺🇸US-184.72.124.41-4973 | 31.036MB
-  - 🇺🇸US-173.234.29.2-0266 | 34.214MB
-  - 🇨🇦CA-142.4.216.225-0294 | 17.819MB
   - 🇺🇸US-13.218.107.141-4982 | 53.525MB
-  - 🇺🇸US-156.146.38.170-0221 | 175.91MB
-  - 🇨🇦CA-137.184.174.93-0220 | 79.063MB
+  - 🇺🇸US-54.91.94.165-4975 | 32.345MB
+  - 🇺🇸US-184.72.124.41-4973 | 31.036MB
+  - 🇺🇸US-54.227.38.247-4985 | 60.113MB
+  - 🇨🇦CA-142.4.216.225-0294 | 17.819MB
+  - 🇺🇸US-37.19.198.160-0266 | 99.74MB
+  - 🇺🇸US-34.224.81.182-4972 | 45.786MB
+  - 🇺🇸US-156.146.38.167-0256 | 192.433MB
   - 🇺🇸US-156.146.38.168-0261 | 183.582MB
   - 🇺🇸US-156.146.38.169-0226 | 111.78MB
-  - 美国 - Ashburn - Amazon.com - 7
-  - 🇺🇸US-156.146.38.167-0256 | 192.433MB
-  - 🇨🇦CA-23.95.76.59-0353 | 8.281MB
-  - 🇺🇸US-18.206.174.108-4984 | 44.467MB
-  - '[Trojan] 未知 TROJAN-528 | free-nodes'
-  - edgetunnel
-  - 🇺🇸US-104.192.226.106-0224 | 23.926MB
+  - 🇨🇦CA-137.184.174.93-0220 | 79.063MB
+  - 🇺🇸US-37.19.198.236-0265 | 198.881MB
+  - 🇺🇸US-156.146.38.170-0221 | 175.91MB
+  - '[Trojan] 未知 TROJAN-1248 | free-nodes'
+  - 🇺🇸US-37.19.198.244-0382 | 149.257MB
   - 🇺🇸US-104.192.226.106-0222 | 33.696MB
-  - 🇮🇪IE-54.246.35.116-4950
-  - US美国(mibei77.com 米贝节点分享)
-  - IE-3.253.99.197-1011 | 29.093MB
+  - 🇺🇸US-173.244.56.6-0271 | 39.457MB
+  - 🇺🇸US-173.244.56.9-0270 | 57.629MB
+  - 🇺🇸US-104.192.226.106-0224 | 23.926MB
+  - '[Vless] 🇺🇸 美国阿什本|01|0.1倍'
   - 🇨🇦CA-79.127.233.170-0223 | 69.145MB
   - 🇨🇦CA-79.127.233.170-0228 | 55.581MB
-  - 🇺🇸US-34.224.81.182-4972 | 45.786MB
-  - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
+  - 🇺🇸 US_180
+  - '[Vless] 🇺🇸 美国洛杉矶04|CT|CM|CU'
+  - 🇺🇸_美国_38
+  - '[Vless] 🇺🇸 美国圣何塞03|CT|CM|CU'
+  - '[Vless] 🇺🇸 美国圣何塞01|CT|CM|CU'
   - 🇵🇷PR-185.47.255.22-0343
-  - 🇫🇷FR-15.236.142.160-4934 | 23.922MB
-  - 🇺🇸US-107.151.182.253-0276 | 30.092MB
-  - 🇫🇷FR-13.38.79.160-4931 | 24.105MB
-  - 🇫🇷FR-15.236.122.197-4930 | 23.687MB
-  - '[SS] 🇺🇸 US SS-120 | free-nodes'
-  - 法国 - 巴黎 - Amazon Technologies Inc. - 6
-  - LT-45.87.175.28-0365 | 28.352MB
-  - 🇫🇷FR-51.44.165.171-4979 | 22.408MB
-  - 🇳🇱NL-109.201.152.181-0265 | 31.098MB
-  - AE-151.242.251.142-0246 | 31.586MB
-  - RU俄罗斯(mibei77.com 米贝节点分享) 3
-  - LT-45.87.175.58-0341 | 29.626MB
-  - AE-151.242.251.152-0250 | 29.963MB
-  - '[SS] 未知 SS-46 | free-nodes'
-  - LT-45.87.175.69-0380 | 8.357MB
-  - LT-45.87.175.177-0230 | 27.418MB
-  - 🇬🇧GB-82.38.31.205-0372
-  - AE-151.242.251.133-0236 | 29.751MB
-  - LT-45.87.175.171-0351 | 26.768MB
-  - 🇳🇱NL-193.29.139.227-0245 | 28.998MB
-  - AE-151.242.251.144-0241 | 28.138MB
-  - AE-151.242.251.137-0229 | 29.595MB
-  - LT-45.87.175.181-0263 | 28.446MB
-  - 🇬🇧GB-82.38.31.214-0259 | 29.591MB
-  - 🇬🇧GB-82.38.31.217-0233 | 29.599MB
-  - 🇫🇷FR-35.180.209.169-4933 | 24.986MB
-  - AE-151.242.251.153-0231 | 29.92MB
-  - '[SS] 未知 SS-45 | free-nodes'
-  - 🇳🇱NL-193.29.139.240-0371
-  - 🇳🇱NL-51.15.17.169-0248 | 29.69MB
-  - 🇱🇹LT-45.158.171.66-0381
-  - 🇳🇱NL-193.29.139.157-0251 | 31.144MB
-  - 🇱🇹LT-45.87.175.166-0339
-  - DE-Y9e8
-  - 🇬🇧GB-82.38.31.194-0244 | 23.18MB
-  - 🇳🇱NL-193.29.139.251-0370
-  - LT-45.87.175.164-0247 | 29.66MB
-  - LT-45.87.175.178-0255 | 27.11MB
-  - 🇬🇧GB-82.38.31.179-0356
-  - LT-45.87.175.174-0319 | 29.55MB
-  - AE-151.242.251.147-0237 | 29.546MB
-  - 🇬🇧GB-82.38.31.210-0235 | 28.387MB
-  - LT-45.87.175.154-0238 | 29.166MB
-  - 🇳🇱NL-193.29.139.217-0243 | 28.506MB
-  - 🇱🇹LT-45.158.171.70-0362
-  - 🇬🇧GB-82.38.31.191-0242 | 28.64MB
-  - '[SS] 未知 SS-59 | free-nodes'
-  - LT-45.87.175.65-0377 | 6.252MB
-  - AE-151.242.251.131-0249 | 28.369MB
-  - 🇬🇧GB-82.38.31.218-0240 | 28.415MB
-  - 🇬🇧GB-82.38.31.199-0328
-  - LT-45.87.175.155-0239 | 29.49MB
-  - 🇫🇷_FR_法国-JJmO
-  - '[SS] 未知 SS-64 | free-nodes'
-  - 🇱🇹LT-45.87.175.166-0338
-  - 🇫🇷FR-195.154.119.77-0278 | 13.968MB
-  - 🇱🇹LT-45.87.175.187-0318
-  - BG-95.164.10.228-0325 | 25.785MB
-  - '[SS] 未知 SS-77 | free-nodes'
-  - 🇫🇷FR-13.38.24.62-4929 | 25.184MB
-  - '[SS] 未知 SS-105 | free-nodes'
-  - '[SS] 未知 SS-29 | free-nodes'
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  - SE-13.61.17.80-4977 | 21.158MB
-  - '[SS] 未知 SS-75 | free-nodes'
-  - 🇬🇧GB-141.98.101.178-0357 | 21.319MB
-  - 🇵🇱PL-217.30.10.70-5084
-  - FI-37.143.129.230-0253 | 26.79MB
-  - SE-51.20.125.235-4978 | 20.687MB
-  - 🇸🇪SE-192.71.249.78-0317
-  - 🇸🇪SE-13.61.13.231-4976
-  - CZ-195.181.160.6-0254 | 26.99MB
-  - 🇵🇱PL-217.30.10.18-4746 | 5.624MB
-  - SE-121.127.46.147-5029 | 25.653MB
-  - MD-178.23.190.238-0268 | 21.606MB
-  - 🇵🇱PL-217.30.10.18-4863 | 5.709MB
-  - 🇫🇷FR-13.38.73.145-4935
-  - FI-65.21.243.22-0270 | 16.804MB
-  - LV-46.183.217.204-0296 | 12.698MB
-  - SI-45.83.131.43-0262 | 23.343MB
-  - 🇲🇰MK-46.183.185.37-0406
+  - 🇺🇸 US_169
   - IE-34.251.86.159-4949 | 28.948MB
-  - GB-QY29
+  - IE-3.253.99.197-1011 | 29.093MB
+  - '[Vless] 🇺🇸 美国圣何塞02|CT|CM|CU'
+  - 🇺🇸 US_165
+  - '[Vless] 🇺🇸 美国圣何塞|01|0.1倍'
+  - 🇬🇧GB-82.38.31.210-0235 | 28.387MB
+  - 🇬🇧GB-82.38.31.218-0240 | 28.415MB
+  - 🇳🇱NL-193.29.139.217-0243 | 28.506MB
+  - LT-45.87.175.192-0234 | 28.179MB
+  - LT-45.87.175.181-0420 | 41.479MB
+  - AE-151.242.251.137-0229 | 29.595MB
+  - 🇬🇧GB-82.38.31.194-0244 | 23.18MB
+  - LT-45.87.175.171-0351 | 26.768MB
+  - LT-45.87.175.174-0319 | 29.55MB
+  - '[SS] 未知 SS-46 | free-nodes'
+  - AE-151.242.251.133-0236 | 29.751MB
+  - 🇬🇧GB-82.38.31.214-0259 | 29.591MB
+  - LT-45.87.175.28-0365 | 28.352MB
+  - LT-45.87.175.69-0380 | 8.357MB
+  - 🇳🇱NL-193.29.139.227-0245 | 28.998MB
+  - LT-45.87.175.58-0341 | 29.626MB
+  - LT-45.87.175.155-0239 | 29.49MB
+  - AE-151.242.251.147-0237 | 29.546MB
+  - LT-45.87.175.164-0247 | 29.66MB
+  - AE-151.242.251.144-0241 | 28.138MB
+  - AE-151.242.251.152-0250 | 29.963MB
+  - 🇳🇱NL-109.201.152.181-0265 | 31.098MB
+  - BG-95.164.10.228-0325 | 25.785MB
+  - 🇳🇱NL-51.15.17.169-0248 | 29.69MB
+  - AE-151.242.251.153-0231 | 29.92MB
+  - 🇫🇷FR-35.180.209.169-4933 | 24.986MB
+  - LT-45.87.175.65-0377 | 6.252MB
+  - 🇫🇷FR-15.236.122.197-4930 | 23.687MB
+  - LT-45.87.175.181-0263 | 28.446MB
+  - LT-45.87.175.166-0292 | 40.267MB
+  - AE-151.242.251.142-0246 | 31.586MB
+  - 🇫🇷FR-51.44.165.171-4979 | 22.408MB
+  - 🇱🇹LT-45.87.175.166-0339
+  - 🇱🇹LT-45.87.175.166-0338
+  - 🇬🇧GB-82.38.31.205-0372
+  - LT-45.87.175.164-0288 | 42.877MB
+  - 🇫🇷FR-195.154.119.77-0278 | 13.968MB
+  - 🇫🇷FR-13.38.79.160-4931 | 24.105MB
   - 🇨🇦CA-142.4.216.225-0290 | 12.231MB
-  - 🇨🇦CA-45.154.204.13-0295
-  - telegram » mainv𝟮ray
-  - HR-185.156.110.92-0394 | 22.992MB
-  - ⚛️3@oneclickvpnkeys
-  - '[Trojan] 未知 TROJAN-1208 | free-nodes'
-  - '[SS] TR SS-39 | free-nodes'
-  - 🇸🇮SI-192.71.244.150-0419
-  - 法国 - 巴黎 - SCALEWAY - 2
-  - ⭕40@oneclickvpnkeys
-  - AR-190.103.176.32-0271 | 21.539MB
-  - IL_e3ed0_0004
-  - 🇳🇱NL-208.67.105.196-4879
-  - '[Trojan] 未知 TROJAN-815 | free-nodes'
-  - '@Hddify #3'
-  - '[SS] 未知 SS-61 | free-nodes'
-  - '[Trojan] 未知 TROJAN-1248 | free-nodes'
-  - '[SS] 未知 SS-30 | free-nodes'
-  - All-@V2rayAlpha--7
-  - BG-95.164.116.33-0330 | 20.843MB
-  - MD-213.159.67.124-5094 | 20.182MB
+  - AE-151.242.251.131-0249 | 28.369MB
+  - 🇬🇧GB-141.98.101.178-0357 | 21.319MB
+  - 🇵🇱PL-217.30.10.18-4746 | 5.624MB
+  - '[Vless] 🇺🇸 US VLESS-133 | free-nodes'
+  - SE-13.61.17.80-4977 | 21.158MB
+  - SE-51.20.125.235-4978 | 20.687MB
+  - 🇵🇱PL-217.30.10.18-0331 | 3.905MB
+  - 🇸🇪SE-192.71.249.78-0317
+  - MD-178.23.190.238-0268 | 21.606MB
+  - SE-121.127.46.147-5029 | 25.653MB
+  - FI-37.143.129.230-0253 | 26.79MB
+  - 🇵🇱PL-45.15.126.19-5102 | 20.143MB
+  - CZ-195.181.160.6-0254 | 26.99MB
+  - FI-65.21.243.22-0270 | 16.804MB
+  - SI-45.83.131.43-0262 | 23.343MB
+  - 🇬🇧GB-82.38.31.217-0233 | 29.599MB
+  - 🇩🇰DK-192.36.27.94-0311 | 2.485MB
+  - '[Hysteria2] 🇬🇧 英国|高速专线|hy2|0.1倍'
+  - 🇺🇸US-23.95.72.81-0313 | 3.29MB
   - 🇲🇦MA-188.214.157.58-0361
-  - 🇲🇦MA-154.70.207.97-0368
-  - 🇷🇺RU-45.138.157.162-0334 | 21.033MB
   - 🇯🇵JP-149.22.87.204-0282 | 26.423MB
-  - 🇳🇱@FreakConfig
-  - '🇳🇱 - NL - @freeOnlineVPN #7'
-  - RO-185.126.237.38-0289 | 8.583MB
-  - MD-94.131.104.147-0258 | 25.127MB
-  - '🇳🇱 - NL - @freeOnlineVPN #5'
+  - LT-45.87.175.178-0255 | 27.11MB
+  - 🇸🇮SI-192.71.244.150-0419
+  - AR-190.103.176.32-0271 | 21.539MB
+  - '[SS] 未知 SS-45 | free-nodes'
+  - 🇳🇱NL-193.29.139.157-0251 | 31.144MB
+  - '[SS] 未知 SS-59 | free-nodes'
+  - 🇬🇧GB-82.38.31.202-0340
+  - 🇲🇰MK-46.183.185.37-0406
+  - '[Hysteria2] 🇺🇸 美国|08|CT|CU|CM|0.1倍'
   - 🇲🇦MA-188.214.157.30-0401
-  - '[Vless] 未知 VLESS-53 | free-nodes'
-  - '🔸@IRAN_V2RAY1💘 #5'
-  - '🇳🇱 - NL - @freeOnlineVPN #4'
-  - '[SS] 未知 SS-65 | free-nodes'
+  - '[Hysteria2] 🇨🇭 瑞士苏黎世|高速专线|hy2'
+  - 🇺🇸US-107.151.182.253-0276 | 30.092MB
+  - 🇷🇺RU-45.138.157.162-0334 | 21.033MB
+  - 🇺🇸US-54.159.62.233-5107 | 59.71MB
+  - '[Hysteria2] 🇺🇸 美国|05|CT|CU|CM|0.1倍'
+  - BG-95.164.116.33-0330 | 20.843MB
+  - LT-45.87.175.177-0230 | 27.418MB
+  - 🇺🇸US-23.95.75.146-0326 | 4.646MB
+  - 🇲🇹MT-171.22.254.17-0373
+  - '[SS] TR SS-39 | free-nodes'
+  - 🇵🇱PL-217.30.10.70-5091
+  - '[Hysteria2] 🇺🇸 美国|10|CT|CM|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|06|CT|CU|CM|0.1倍'
+  - MD-89.221.225.15-0267 | 18.489MB
+  - MD-94.131.104.147-0258 | 25.127MB
+  - 🇭🇰HK-103.149.183.12-5048
+  - 🇨🇦CA-45.154.204.7-0300 | 12.244MB
+  - 🇲🇩MD-185.153.197.5-0397
+  - '[Hysteria2] 🇺🇸 美国|07|CT|CU|CM|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|03|CT|CU|CM|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|04|CT|CU|CM|0.1倍'
   - '[Vless] 🇬🇧 GB VLESS-07 | free-nodes'
-  - '[Vless] 未知 VLESS-79 | free-nodes'
+  - 🇺🇸 US_173
+  - '[Hysteria2] 🇺🇸 美国|01|CT|CU|CM|0.1倍'
   - PA-138.186.142.80-0336 | 28.145MB
   - PA-138.186.142.81-0227 | 27.47MB
-  - MD-89.221.225.15-0267 | 18.489MB
-  - 🇨🇦CA-45.154.204.7-0300 | 12.244MB
-  - '[Vless] 🇬🇧 GB VLESS-81 | free-nodes'
-  - 🇦🇷AR-38.54.45.129-0407
-  - 'All--@IRAN_V2RAY1 #4'
-  - '[Vless] 未知 VLESS-128 | free-nodes'
-  - '[Trojan] 未知 TROJAN-1033 | free-nodes'
-  - 🇭🇰[openproxylist.com] vmess-HK
-  - '🇳🇱 - NL - @freeOnlineVPN #6'
-  - '[Vless] 未知 VLESS-91 | free-nodes'
-  - '[Trojan] 未知 TROJAN-664 | free-nodes'
-  - HK
-  - '@Daily_Configs'
-  - ZA-156.38.168.58-0281 | 10.275MB
-  - 美国3
-  - LT-45.87.175.192-0234 | 28.179MB
-  - '[Trojan] 未知 TROJAN-908 | free-nodes'
-  - 🇧🇴BO-185.93.173.60-0409
-  - '[SS] 未知 SS-28 | free-nodes'
-  - '[Trojan] 未知 TROJAN-610 | free-nodes'
-  - 🇲🇩MD-185.153.197.5-0397
-  - 🇺🇸US-71.19.148.143-0402
-  - 🇫🇷FR-13.39.112.212-4936
-  - 哈萨克斯坦 - 阿拉木圖 - PS Internet Company LLP - 1
-  - 美国1
-  - '💎کانفیگ های بیشتر در چنل تلگرا... #2'
-  - 🇰🇷_KR_韩国
-  - '[SS] 🇩🇪 DE SS-119 | free-nodes'
-  - 'All--@IRAN_V2RAY1🇺🇸 #5'
-  - 🇰🇷_KR_韩国_1
-  - 🇮🇳IN-134.209.147.198-0404
-  - '[Trojan] 未知 TROJAN-1470 | free-nodes'
-  - '[Trojan] 未知 TROJAN-1005 | free-nodes'
-  - '[Vless] 未知 VLESS-127 | free-nodes'
-  - MD-213.159.66.206-0277 | 15.157MB
-  - '🔸@IRAN_V2RAY1💘 #11'
-  - '[Trojan] 未知 TROJAN-817 | free-nodes'
-  - 🇮🇳IN-134.209.147.198-0396
-  - MD-213.159.76.21-0287 | 18.127MB
-  - '[Trojan] 未知 TROJAN-1216 | free-nodes-G1ft'
-  - '🔸@IRAN_V2RAY1💘 #1'
-  - '[Vless] 🇯🇵 JP VLESS-66 | free-nodes'
+  - PY-38.165.233.93-0306 | 3.007MB
   - 🇯🇵JP-153.121.53.187-4968 | 10.836MB
-  - '[Vless] 未知 VLESS-67 | free-nodes-M2Q2'
+  - 🇯🇵JP-153.121.65.107-0297 | 10.331MB
+  - 🇯🇵 日本2|@stairnode-YxWS
+  - '[Trojan] 未知 TROJAN-533 | free-nodes-DAne'
   - '[Trojan] 未知 TROJAN-1385 | free-nodes'
-  - 🇹🇼TW-223.165.4.173-4813
-  - '[Trojan] 未知 TROJAN-812 | free-nodes'
+  - '[Hysteria2] 🇺🇸 美国|09|CT|CU|CM|0.1倍'
+  - '[Hysteria2] 🇺🇸 美国|02|CT|CU|CM|0.1倍'
   - '[Trojan] 未知 TROJAN-1634 | free-nodes'
-  - DE-ha27
-  - KZ-109.61.39.28-0299 | 15.96MB
-  - '[Vless] 未知 VLESS-62 | free-nodes'
+  - ZA-156.38.168.58-0281 | 10.275MB
   - '[Trojan] 未知 TROJAN-1250 | free-nodes'
-  - 🇯🇵 日本2|@stairnode-Ahz0
-  - '[Trojan] 未知 TROJAN-280 | free-nodes-rueb'
-  - '[SS] 未知 SS-10 | free-nodes'
-  - '💎کانفیگ های بیشتر در چنل تلگرا... #1'
-  - '🔸@IRAN_V2RAY1💘 #2'
-  - '[Vless] 未知 VLESS-116 | free-nodes'
-  - '[Trojan] 未知 TROJAN-533 | free-nodes'
-  - 🇹🇷_土耳其
-  - All-@V2rayAlpha--46
-  - FR法国(mibei77.com 米贝节点分享)
-  - 🇻🇳VN-103.186.154.163-5181
-  - '[Vless] 未知 VLESS-55 | free-nodes'
-  - 🇻🇳VN-103.186.154.155-5177
-  - 🇻🇳VN-103.186.154.169-5178
-  - 🇻🇳VN-103.186.154.228-5381
-  - 🇻🇳VN-103.186.154.78-5376
-  - '@V2ray_confing33'
-  - 🇻🇳VN-103.186.154.65-5171
-  - 🇻🇳VN-103.186.154.154-5175
-  - 🇻🇳VN-103.186.154.72-5133
-  - 🇻🇳VN-103.186.154.151-5014
-  - 🇻🇳VN-103.186.154.168-5183
-  - 🇻🇳VN-103.186.155.233-5366
-  - 🇻🇳VN-103.186.154.153-5179
-  - 🇻🇳VN-103.186.155.117-0870
-  - 🇻🇳VN-103.186.154.190-5002
-  - 🇻🇳VN-103.186.155.222-5390
-  - 🇻🇳VN-103.186.154.176-5187
-  - 🇻🇳VN-103.186.155.113-5377
-  - 🇻🇳VN-103.186.155.207-5349
-  - 🇻🇳VN-103.186.155.203-5385
-  - 🇻🇳VN-103.186.154.31-4907
-  - 🇻🇳VN-103.186.154.37-4915
-  - 🇻🇳VN-103.186.155.213-5155
-  - 🇻🇳VN-103.186.155.54-5143
-  - 🇻🇳VN-103.186.155.10-5398
-  - 🇻🇳VN-103.186.154.192-5026
-  - 🇻🇳VN-103.186.154.43-5162
-  - 🇻🇳VN-103.186.154.50-4990
-  - 🇻🇳VN-103.186.155.229-5368
-  - 🇻🇳VN-103.186.154.68-5173
-  - 🇻🇳VN-103.186.154.28-4909
-  - 🇻🇳VN-103.186.154.196-5129
-  - 🇻🇳VN-103.186.154.179-5192
-  - 🇻🇳VN-103.186.154.79-5383
-  - 🇻🇳VN-103.186.154.159-5180
-  - 🇻🇳VN-103.186.154.187-5375
-  - 🇻🇳VN-103.186.155.215-5350
-  - 🇻🇳VN-103.186.154.54-5170
-  - 🇻🇳VN-103.186.154.237-5141
-  - 🇻🇳VN-103.186.155.206-5345
-  - 🇻🇳VN-103.186.154.75-5182
-  - 🇻🇳VN-103.186.155.154-5158
+  - '[Trojan] 未知 TROJAN-1470 | free-nodes'
+  - MD-176.123.1.175-0302 | 7.039MB
+  - 🇦🇷AR-38.54.45.129-0407
+  - 🇺🇸_US_美国_4
+  - 🇧🇴BO-185.93.173.60-0409
+  - MD-213.159.76.21-0287 | 18.127MB
+  - '[Vless] 🇯🇵 日本高速|01|0.1倍'
+  - 🇻🇳VN-103.186.155.125-5351
   - 🇻🇳VN-103.186.154.189-5137
-  - 🇻🇳VN-103.186.154.239-5159
-  - 🇻🇳VN-103.186.155.5-5001
-  - 🇻🇳VN-103.186.154.240-5380
-  - 🇻🇳VN-103.186.154.46-5153
-  - 🇻🇳VN-103.186.155.135-5146
-  - 🇻🇳VN-103.186.155.211-5372
-  - 🇻🇳VN-103.186.155.77-5364
+  - 🇻🇳VN-103.186.154.52-5294
+  - 🇻🇳VN-103.186.154.172-5288
+  - 🇻🇳VN-103.186.154.236-5314
   - 🇻🇳VN-103.186.154.12-5157
-  - 🇻🇳VN-103.186.155.234-5348
-  - 🇻🇳VN-103.186.154.149-5134
-  - 🇻🇳VN-103.186.155.218-5395
-  - 🇻🇳VN-103.186.155.126-5006
-  - 🇭🇰HK-47.242.140.52-5060
-  - 🇻🇳VN-103.186.154.181-5188
-  - 🇻🇳VN-103.186.154.9-5147
-  - 🇻🇳VN-103.186.154.174-5384
-  - 🇻🇳VN-103.186.154.146-5130
-  - 🇻🇳VN-103.186.154.40-4994
-  - 🇭🇰HK-47.242.140.52-5059
-  - 🇻🇳VN-103.186.154.29-4904
-  - 🇻🇳VN-103.186.154.71-5367
-  - 🇻🇳VN-103.186.154.234-4999
-  - 🇻🇳VN-103.186.154.55-4993
-  - 🇻🇳VN-103.186.154.191-5015
-  - 🇻🇳VN-103.186.154.26-4908
-  - 🇻🇳VN-103.186.155.21-4901
-  - 🇻🇳VN-103.186.154.45-5167
-  - 🇻🇳VN-103.186.154.144-5360
-  - 🇻🇳VN-103.186.154.44-5016
-  - 🇻🇳VN-103.186.155.70-5362
-  - 🇻🇳VN-103.186.154.32-4897
-  - 🇻🇳VN-103.186.155.19-4899
-  - 🇭🇰HK-8.218.199.111-5097
-  - 🇻🇳VN-103.186.154.209-4998
-  - 🇻🇳VN-103.186.154.42-5160
-  - 🇻🇳VN-103.186.155.146-5352
-  - 🇻🇳VN-103.186.155.131-5386
-  - 🇻🇳VN-103.186.155.26-5003
+  - 🇻🇳VN-103.186.155.207-5349
+  - 🇻🇳VN-103.186.155.238-5388
+  - 🇻🇳VN-103.186.154.47-5267
+  - 🇫🇷FR-45.158.171.151-0289 | 45.391MB
+  - 🇻🇳VN-103.186.155.148-5136
+  - 🇻🇳VN-103.186.154.225-5391
+  - 🇰🇷KR-141.164.45.187-0310 | 4.462MB
+  - 🇻🇳VN-103.186.154.216-5282
+  - 🇻🇳VN-103.186.154.17-5292
+  - 🇻🇳VN-103.186.155.214-5276
+  - 🇻🇳VN-103.186.155.240-5249
+  - 🇻🇳VN-103.186.154.227-5208
+  - 🇻🇳VN-103.186.155.232-5239
+  - 🇻🇳VN-103.186.154.207-5308
+  - 🇻🇳VN-103.186.155.31-5287
+  - 🇻🇳VN-103.186.154.53-5273
+  - 🇻🇳VN-103.186.155.137-5124
+  - 🇻🇳VN-103.186.154.193-5389
+  - 🇻🇳VN-103.186.155.134-5346
   - 🇻🇳VN-103.186.155.29-5399
-  - 🇻🇳VN-103.186.155.34-5013
-  - 🇻🇳VN-103.186.154.156-5174
-  - 🇻🇳VN-103.186.155.115-5132
+  - 🇻🇳VN-103.186.155.78-5149
+  - 🇻🇳VN-103.186.155.230-5251
+  - 🇻🇳VN-103.186.154.246-5215
+  - 🇻🇳VN-103.186.155.58-5247
+  - 🇻🇳VN-103.186.154.174-5384
+  - 🇻🇳VN-103.186.155.218-5395
+  - 🇻🇳VN-103.186.154.13-5135
+  - 🇻🇳VN-103.186.155.54-5143
+  - 🇻🇳VN-103.186.155.82-5333
+  - 🇻🇳VN-103.186.155.234-5348
+  - 🇻🇳VN-103.186.154.49-5165
+  - 🇻🇳VN-103.186.154.210-5203
+  - 🇻🇳VN-103.186.155.48-5241
+  - 🇻🇳VN-103.186.155.16-5319
+  - 🇻🇳VN-103.186.155.150-5246
+  - 🇻🇳VN-103.186.154.199-5304
+  - 🇻🇳VN-103.186.155.222-5390
+  - 🇻🇳VN-103.186.155.38-5320
+  - 🇻🇳VN-103.186.154.51-5163
+  - 🇻🇳VN-103.186.155.124-5340
+  - 🇻🇳VN-103.186.154.59-5145
+  - 🇻🇳VN-103.186.155.75-5365
+  - 🇻🇳VN-103.186.154.46-5153
+  - 🇻🇳VN-103.186.155.154-5158
+  - 🇻🇳VN-103.186.154.145-5297
+  - 🇻🇳 越南|@stairnode
+  - 🇻🇳VN-103.186.154.169-5178
+  - 🇻🇳VN-103.186.154.188-5306
+  - 🇻🇳VN-103.186.154.211-5199
+  - 🇻🇳VN-103.186.154.56-5293
+  - 🇻🇳VN-103.186.155.57-5400
   - 🇻🇳VN-103.186.154.140-5370
-  - All-@V2rayAlpha--33
-  - 🇻🇳VN-103.186.154.222-5401
-  - 🇻🇳VN-103.186.155.205-4987
-  - 🇻🇳VN-103.186.154.253-5131
-  - 🇻🇳VN-103.186.154.158-5156
-  - 🇻🇳VN-103.186.154.35-4911
+  - 🇻🇳VN-103.186.154.156-5174
+  - 🇻🇳VN-103.186.155.49-5324
+  - 🇻🇳VN-103.186.155.233-5366
+  - 🇻🇳VN-103.186.155.239-5257
+  - 🇻🇳VN-103.186.155.156-5284
+  - 🇻🇳VN-103.186.155.101-5335
+  - '[Trojan] 未知 TROJAN-140 | free-nodes-Nr5W'
+  - 🇻🇳VN-103.186.155.55-5339
+  - 🇻🇳VN-103.186.155.144-5344
+  - 🇻🇳VN-103.186.155.59-5378
+  - 🇻🇳VN-103.186.155.225-5245
   - 🇻🇳VN-103.186.155.226-5150
   - 🇻🇳VN-103.186.155.80-5127
-  - 🇻🇳VN-103.186.155.221-5139
-  - 🇻🇳VN-103.186.155.79-5394
-  - 🇻🇳VN-103.186.155.55-5339
-  - 🇻🇳VN-103.186.154.225-5391
-  - 🇻🇳VN-103.186.155.44-5369
-  - 🇻🇳VN-103.186.154.60-5166
+  - 🇻🇳VN-103.186.155.77-5364
+  - 🇻🇳VN-103.186.154.155-5177
+  - 🇻🇳VN-103.186.154.159-5180
+  - 🇻🇳VN-103.186.154.61-5164
+  - 🇻🇳VN-103.186.154.247-5318
+  - 🇻🇳VN-103.186.154.233-5207
+  - 🇻🇳VN-103.186.154.170-5265
+  - 🇻🇳VN-103.186.154.206-5307
+  - 🇻🇳VN-103.186.155.149-5341
+  - 🇻🇳VN-103.186.154.141-5264
+  - 🇻🇳VN-103.186.155.12-5283
+  - 🇻🇳VN-103.186.154.144-5360
+  - 🇻🇳VN-103.186.155.206-5345
+  - 🇻🇳VN-103.186.154.23-5374
+  - 🇻🇳VN-103.186.155.223-5144
+  - 🇻🇳VN-103.186.155.213-5155
+  - 🇻🇳VN-103.186.154.180-5191
+  - 🇻🇳VN-103.186.155.8-5323
+  - 🇻🇳VN-103.186.154.238-5217
+  - 🇻🇳VN-103.186.154.154-5175
+  - 🇻🇳VN-103.186.155.111-5243
+  - 🇻🇳VN-103.186.154.203-5125
+  - 🇻🇳VN-103.186.155.106-5313
+  - 🇻🇳VN-103.186.154.152-5263
+  - 🇻🇳VN-103.186.154.197-5275
+  - 🇻🇳VN-103.186.155.117-0870
+  - 🇻🇳VN-103.186.154.62-5285
+  - 🇻🇳VN-103.186.155.112-5277
+  - 🇻🇳VN-103.186.154.254-5216
+  - 🇻🇳VN-103.186.155.215-5350
+  - 🇻🇳VN-103.186.154.219-5205
+  - 🇻🇳VN-103.186.155.27-5321
+  - 🇻🇳VN-103.186.154.43-5162
+  - 🇻🇳VN-103.186.154.194-5286
+  - 🇻🇳VN-103.186.154.175-5289
+  - 🇻🇳VN-103.186.154.240-5380
+  - 🇻🇳VN-103.186.154.165-5302
+  - 🇻🇳VN-103.186.154.150-5270
+  - 🇻🇳VN-103.186.155.10-5398
+  - 🇻🇳VN-103.186.155.105-5331
+  - 🇻🇳VN-103.186.154.186-5279
+  - 🇻🇳VN-103.186.155.138-5154
+  - 🇻🇳VN-103.186.154.15-5161
+  - 🇻🇳VN-103.186.154.196-5129
+  - 🇻🇳VN-103.186.154.9-5147
+  - 🇻🇳VN-103.186.155.142-5253
+  - 🇻🇳VN-103.186.155.129-5027
+  - 🇻🇳VN-103.186.154.166-5382
+  - 🇻🇳VN-103.186.154.167-5356
+  - 🇻🇳VN-103.186.155.237-5254
+  - 🇻🇳VN-103.186.155.109-5268
+  - 🇻🇳VN-103.186.155.235-5252
+  - 🇻🇳VN-103.186.154.201-5196
+  - 🇻🇳VN-103.186.154.242-5315
   - 🇻🇳VN-103.186.155.224-5347
-  - 🇻🇳VN-103.186.154.235-5017
+  - 🇻🇳VN-103.186.155.183-5248
+  - 🇻🇳VN-103.186.154.72-5133
+  - 🇻🇳VN-103.186.155.140-5359
+  - 🇻🇳VN-103.186.154.42-5160
+  - 🇻🇳VN-103.186.154.220-5337
+  - 🇻🇳VN-103.186.155.221-5139
+  - 🇻🇳VN-103.186.154.198-5193
+  - 🇻🇳VN-103.186.155.128-5142
+  - 🇻🇳VN-103.186.154.226-5200
   - 🇻🇳VN-103.186.155.43-5392
-  - 🇻🇳VN-103.186.154.193-5389
+  - 🇻🇳VN-103.186.154.244-5212
+  - 🇻🇳VN-103.186.155.120-5240
+  - 🇻🇳VN-103.186.154.217-5278
+  - 🇻🇳VN-103.186.155.79-5394
+  - 🇻🇳VN-103.186.154.69-5296
+  - 🇻🇳VN-103.186.155.42-5328
+  - 🇻🇳VN-103.186.154.41-5290
+  - 🇻🇳VN-103.186.155.60-5126
+  - 🇻🇳VN-103.186.155.39-5329
+  - 🇻🇳VN-103.186.155.115-5132
+  - 🇻🇳VN-103.186.155.209-5272
+  - 🇻🇳VN-103.186.154.34-5291
+  - 🇻🇳VN-103.186.154.76-5298
+  - 🇻🇳VN-103.186.155.15-5269
+  - 🇻🇳VN-103.186.155.113-5377
+  - 🇻🇳VN-103.186.154.182-5358
+  - '[Trojan] 未知 TROJAN-280 | free-nodes-P7Yz'
+  - 🇻🇳VN-103.186.155.145-5258
+  - 🇻🇳VN-103.186.154.158-5156
+  - 🇻🇳VN-103.186.154.164-5186
+  - 🇻🇳VN-103.186.155.231-5256
+  - 🇻🇳VN-103.186.154.143-5172
+  - 🇻🇳VN-103.186.154.57-5373
+  - 🇻🇳VN-103.186.154.20-5379
+  - 🇻🇳VN-103.186.154.163-5181
+  - 🇮🇳IN-134.209.147.198-0396
+  - 🇻🇳VN-103.186.155.220-5250
+  - 🇻🇳VN-103.186.154.153-5179
+  - 🇻🇳VN-103.186.155.47-5148
+  - '[Hysteria2] 🇭🇰 香港02|CM|CU|'
   - 🇻🇳VN-103.186.155.53-5361
   - 🇻🇳VN-103.186.155.123-5342
-  - 🇻🇳VN-103.186.155.129-5027
-  - 🇻🇳VN-103.186.155.75-5365
-  - 🇭🇰HK-47.242.140.52-5062
-  - 🇻🇳VN-103.186.155.238-5388
-  - 🇻🇳VN-103.186.154.38-4910
-  - 🇳🇱NL-141.98.4.67-0418
-  - 🇻🇳VN-103.186.155.125-5351
-  - 🇻🇳VN-103.186.155.144-5344
-  - 🇻🇳VN-103.186.155.116-5353
-  - 🇻🇳VN-103.186.155.138-5154
-  - 🇻🇳VN-103.186.155.63-4995
-  - 🇻🇳VN-103.186.154.4-5007
-  - 🇻🇳VN-103.186.155.32-5000
-  - 🇻🇳VN-103.186.154.36-4917
-  - 🇻🇳VN-103.186.155.141-4996
-  - 🇻🇳VN-103.186.154.59-5145
-  - 🇻🇳VN-103.186.154.249-5018
-  - 🇻🇳VN-103.186.155.57-5400
-  - 🇻🇳VN-103.186.154.33-4918
-  - 🇻🇳VN-103.186.154.160-5396
-  - 🇻🇳VN-103.186.155.236-5010
-  - 🇻🇳VN-103.186.154.203-5125
-  - 🇻🇳VN-103.186.155.81-5354
-  - '[SS] 未知 SS-95 | free-nodes'
-  - 🇻🇳VN-103.186.155.202-5371
-  - 🇻🇳VN-103.186.154.182-5358
-  - 🇻🇳VN-103.186.155.137-5124
-  - 🇻🇳VN-103.186.154.167-5356
-  - 🇻🇳VN-103.186.154.57-5373
-  - 🇻🇳VN-103.186.154.51-5163
-  - 🇻🇳VN-103.186.154.198-5193
-  - 🇻🇳VN-103.186.154.21-4912
-  - 🇻🇳VN-103.186.154.13-5135
-  - 🇻🇳VN-103.186.154.19-4919
-  - 🇻🇳VN-103.186.154.11-5169
-  - 🇻🇳VN-103.186.154.58-5009
-  - 🇻🇳VN-103.186.154.63-4989
-  - 🇻🇳VN-103.186.155.20-4914
-  - 🇻🇳VN-103.186.155.149-5341
-  - 🇻🇳 越南|@stairnode
-  - 🇻🇳VN-103.186.154.61-5164
-  - 🇻🇳VN-103.186.155.64-5393
   - 🇻🇳VN-103.186.154.48-5363
-  - 🇻🇳VN-103.186.154.20-5379
-  - 🇻🇳VN-103.186.154.49-5165
-  - 🇻🇳VN-103.186.154.39-5168
-  - 🇻🇳VN-103.186.155.69-5152
-  - 🇻🇳VN-103.186.154.27-4923
-  - 🇻🇳VN-103.186.154.24-4921
-  - 🇻🇳VN-103.186.154.173-5189
-  - 🇻🇳VN-103.186.155.124-5340
-  - 🇻🇳VN-103.186.155.133-4902
-  - 🇻🇳VN-103.186.154.18-4916
-  - 🇻🇳VN-103.186.155.22-5151
-  - 🇻🇳VN-103.186.155.50-5024
-  - 🇩🇪[openproxylist.com] vmess-DE
-  - 🇻🇳VN-103.186.155.119-5011
-  - 🇻🇳VN-103.186.154.25-4920
-  - 🇻🇳VN-103.186.154.166-5382
-  - 🇻🇳VN-103.186.154.73-5185
-  - 🇻🇳VN-103.186.155.134-5346
-  - 🇻🇳VN-103.186.154.213-5012
-  - 🇭🇰 香港4|@stairnode-7umP
-  - 🇻🇳VN-103.186.154.67-5184
-  - 🇻🇳VN-103.186.155.17-5008
-  - 🇻🇳VN-103.186.155.59-5378
-  - 🇻🇳VN-103.186.154.164-5186
-  - 🇻🇳VN-103.186.155.37-5140
-  - 🇻🇳VN-103.186.154.23-5374
-  - '[Trojan] 未知 TROJAN-614 | free-nodes-UpV5'
-  - 🇻🇳VN-103.186.155.41-5138
-  - 越南 - Hải Dương - FASTLY - 8
-  - 🇻🇳VN-103.186.154.15-5161
-  - 🇻🇳VN-103.186.155.108-4997
-  - 🇻🇳VN-103.186.155.40-5355
-  - 🇻🇳VN-103.186.155.24-4922
-  - 🇻🇳VN-103.186.155.23-4924
-  - 🇻🇳VN-103.186.154.195-5190
-  - 🇻🇳VN-103.186.154.22-4906
-  - 🇻🇳VN-103.186.155.107-4991
-  - France_None_hysteria_81
-  - 🇻🇳VN-103.186.155.60-5126
-  - 🇻🇳VN-103.186.155.128-5142
-  - DE-WZmQ
-  - 🇻🇳VN-103.186.155.140-5359
-  - '[SS] 🇩🇪 DE SS-06 | free-nodes'
-  - 🇻🇳VN-103.186.155.47-5148
-  - 🇻🇳VN-103.186.155.46-5023
-  - 🇸🇬 新加坡2|@stairnode
-  - '[Vless] 🇺🇸 US VLESS-113 | free-nodes'
-  - 🇯🇵 日本|@stairnode-kGUl
-  - 🇻🇳VN-103.186.155.132-5357
-  - 🇻🇳VN-103.186.155.30-5128
-  - '[Vless] 未知 VLESS-129 | free-nodes'
-  - '[Trojan] 未知 TROJAN-143 | free-nodes'
-  - '[Trojan] 未知 TROJAN-325 | free-nodes-OJnO'
-  - '[Trojan] 🇺🇸 US TROJAN-100 | free-nodes'
-  - '[Trojan] 未知 TROJAN-620 | free-nodes'
-  - '[Trojan] 未知 TROJAN-374 | free-nodes-KU8A'
-  - '[Trojan] 🇺🇸 US TROJAN-128 | free-nodes'
-  - US-utvz
-  - 🇻🇳VN-103.186.154.232-5020
-  - 🇻🇳VN-103.186.155.3-5021
-  - '[Trojan] 未知 TROJAN-613 | free-nodes'
-  - 🇻🇳VN-103.186.155.110-5019
-  - '[Trojan] 未知 TROJAN-763 | free-nodes'
-  - '[Vless] 🇺🇸 US VLESS-133 | free-nodes'
-  - '[Trojan] 未知 TROJAN-1203 | free-nodes'
-  - 🇻🇳VN-103.186.155.223-5144
-  - 日本3
-  - 🇻🇳VN-103.186.155.78-5149
-  - 🇺🇸 美国|@stairnode
-  - '[Trojan] 未知 TROJAN-967 | free-nodes'
-  - '[Trojan] 未知 TROJAN-1774 | free-nodes'
-  - '[Trojan] 未知 TROJAN-521 | free-nodes-jmht'
-  - SG_e3ed0_0010
-  - 日本2
-  - 🇻🇳VN-103.186.155.148-5136
-  - 🇻🇳VN-103.186.154.250-5025
-  - 🇹🇼TW-154.223.20.79-4754
-  - 🇻🇳VN-103.186.155.83-4988
-  - 台湾1
-  - 🇻🇳VN-103.186.154.143-5172
-  - 🇪🇬EG-38.54.59.180-0358
-  - 🇻🇳VN-103.186.154.147-5005
-  - TW_e3ed0_0011
-  - 🇻🇳VN-103.186.154.64-5176
-  - '[SS] 未知 SS-84 | free-nodes'
-  - 香港1
-  - '[Vless] 🇷🇺 RU VLESS-26 | free-nodes'
-  - '[Trojan] 未知 TROJAN-465 | free-nodes'
-  - SG
-  - '[Trojan] 未知 TROJAN-824 | free-nodes'
-  - 🇩🇿DZ-197.140.29.76-4789
-  - '[Trojan] 未知 TROJAN-857 | free-nodes'
-  - 🇺🇸 美国2|@stairnode
-  - 🇺🇸 美国3|@stairnode-NbKB
-  - '[Trojan] 未知 TROJAN-447 | free-nodes'
-  - 🇺🇸 美国|@stairnode-2Ry6
-  - 🇯🇵JP-18.183.10.91-4766
-  - 🇧🇷BR-38.54.57.90-0398
-  - '[SS] 🇺🇸 US SS-60 | free-nodes'
-  - 🇫🇷_FR_法国
-  - 🇺🇸_US_美国
-  - 🇸🇬[openproxylist.com] ss-SG-pnOW
-  - 🇸🇬 新加坡3|@stairnode-rvWO
-  - 🇩🇪[openproxylist.com] vless-DE-Roqc
-  - 🇧🇷[openproxylist.com] vmess-BR
-  - 🇻🇳VN-103.186.155.25-4925
-  - RU_e3ed0_0009
-  - 🇺🇸 美国2|@stairnode-vPew
-  - 🇻🇳VN-103.186.155.136-5022
-  - '[Trojan] 未知 TROJAN-1659 | free-nodes'
-  - '[Trojan] 未知 TROJAN-391 | free-nodes'
-  - '[SS] 🇬🇧 GB SS-11 | free-nodes'
-  - 13|香港|@ripaojiedian
-  - 🇻🇳VN-103.186.154.30-4900
-  - 🇲🇹MT-171.22.254.17-0373
-  - 🇻🇳VN-103.186.154.180-5191
+  - FR法国(mibei77.com 米贝节点分享)
+  - 🇻🇳VN-103.186.154.239-5159
+  - 🇻🇳VN-103.186.154.253-5131
+  - 🇻🇳VN-103.186.155.64-5393
+  - 🇻🇳VN-103.186.155.62-5326
+  - 🇻🇳VN-103.186.154.200-5198
+  - 🇻🇳VN-103.186.154.161-5271
+  - '[Hysteria2] 🇭🇰 香港05|CM|CU|'
+  - 🇻🇳VN-103.186.155.228-5262
+  - 🇻🇳VN-103.186.154.14-5295
+  - 🇻🇳VN-103.186.155.104-5260
+  - 🇻🇳VN-103.186.154.237-5141
+  - 🇻🇳VN-103.186.154.205-5201
+  - 🇻🇳VN-103.186.154.11-5169
+  - 🇻🇳VN-103.186.155.71-5330
+  - 🇻🇳VN-103.186.154.245-5317
+  - 🇻🇳VN-103.186.154.79-5383
+  - 🇻🇳VN-103.186.155.70-5362
+  - 🇻🇳VN-103.186.154.230-5310
+  - 🇻🇳VN-103.186.155.18-5222
+  - 🇻🇳VN-103.186.155.121-5259
   - 🇻🇳VN-103.186.155.227-5343
-  - 🇻🇳VN-103.186.154.142-5004
-  - 🇹🇭[openproxylist.com] vmess-TH
-  - '[Trojan] 未知 TROJAN-978 | free-nodes'
-  - 🇸🇬 新加坡|@stairnode-UIEj
-  - 🇭🇰 香港|@stairnode
-  - 台湾3
-  - 🇺🇸US-149.30.232.103-5118
-  - 🇺🇸US-149.30.232.103-5116
+  - 🇻🇳VN-103.186.154.139-5299
+  - 🇻🇳VN-103.186.155.211-5372
+  - 🇻🇳VN-103.186.154.208-5202
+  - 🇻🇳VN-103.186.155.56-5266
   - 🇻🇳VN-103.186.154.148-5397
-  - 🇺🇸US-149.30.232.103-5115
-  - 🇱🇹LT-45.87.175.35-0366
-  - 🇭🇰 香港5|@stairnode
+  - 🇻🇳VN-103.186.155.13-5224
+  - 🇻🇳VN-103.186.155.65-5238
+  - 🇻🇳VN-103.186.155.127-5336
+  - 🇻🇳VN-103.186.154.146-5130
+  - 🇻🇳VN-103.186.155.37-5140
+  - 🇻🇳VN-103.186.154.60-5166
+  - 🇻🇳VN-103.186.154.179-5192
+  - 🇻🇳VN-103.186.155.51-5325
+  - 🇻🇳VN-103.186.155.68-5327
+  - 🇻🇳VN-103.186.154.222-5401
+  - 🇻🇳VN-103.186.155.135-5146
+  - 🇻🇳VN-103.186.154.187-5375
+  - 🇻🇳VN-103.186.155.22-5151
+  - 🇻🇳VN-103.186.154.70-5281
+  - 🇻🇳VN-103.186.154.192-5026
+  - 🇻🇳VN-103.186.154.248-5221
+  - '[Hysteria2] 🇯🇵 日本东京hy2|CM|CU|'
+  - 🇻🇳VN-103.186.154.184-5301
+  - 🇻🇳VN-103.186.155.146-5352
+  - 🇻🇳VN-103.186.155.4-5226
+  - 🇻🇳VN-103.186.154.160-5396
+  - '[Hysteria2] 🇭🇰 香港06|CM|CU|'
+  - '[Hysteria2] 🇯🇵 日本东京4hy2|CM|CU|'
+  - '[Hysteria2] 🇦🇺 澳大利亚2|高速专线|hy2'
+  - 🇻🇳VN-103.186.155.69-5152
+  - 🇻🇳VN-103.186.154.224-5204
+  - 🇻🇳VN-103.186.154.183-5300
+  - 🇻🇳VN-103.186.154.252-5219
+  - 🇻🇳VN-103.186.154.66-5387
+  - '[SS] 🇺🇸 US SS-60 | free-nodes'
+  - 🇻🇳VN-103.186.154.185-5305
+  - 🇻🇳VN-103.186.154.221-5312
+  - 🇻🇳VN-103.186.155.229-5368
+  - 🇻🇳VN-103.186.154.202-5195
+  - 🇻🇳VN-103.186.154.168-5183
+  - 🇻🇳VN-103.186.154.181-5188
+  - 🇻🇳VN-103.186.154.78-5376
+  - 🇻🇳VN-103.186.155.122-5244
+  - 🇻🇳VN-103.186.155.81-5354
+  - '[Vless] 🇯🇵 日本东京|CM|CU|'
+  - 🇻🇳VN-103.186.154.39-5168
+  - '[Hysteria2] 🇦🇺 澳大利亚3|高速专线|hy2'
+  - '[Hysteria2] 🇭🇰 香港03|CM|CU|'
+  - 🇻🇳VN-103.186.154.214-5213
+  - 🇻🇳VN-103.186.155.131-5386
+  - '[Hysteria2] 🇭🇰 香港04|CM|CU|'
+  - '[Vless] 🇯🇵 日本东京01|高速专线'
+  - 🇻🇳VN-103.186.155.41-5138
+  - 🇻🇳VN-103.186.155.132-5357
+  - 🇻🇳VN-103.186.154.80-5303
+  - 🇻🇳VN-103.186.155.116-5353
+  - 🇻🇳VN-103.186.155.44-5369
+  - '[Hysteria2] 🇦🇺 澳大利亚|高速专线|hy2'
+  - '[Vless] 🇯🇵 日本东京|10|CT|CU|0.1倍'
+  - '[Hysteria2] 🇭🇰 香港07|CM|CU|'
+  - KZ-109.61.39.28-0299 | 15.96MB
+  - 🇻🇳VN-103.186.154.241-5214
+  - 🇻🇳VN-103.186.155.28-5322
+  - 🇻🇳VN-103.186.155.67-5332
+  - '[Hysteria2] 🇸🇬 新加坡2|高速专线|hy2'
+  - 🇻🇳VN-103.186.154.64-5176
+  - '[Hysteria2] 🇯🇵 日本东京3hy2|CM|CU|'
+  - 🇻🇳VN-103.186.154.173-5189
+  - 🇻🇳VN-103.186.155.52-5280
+  - 🇻🇳VN-103.186.155.130-5242
+  - 🇻🇳VN-103.186.155.40-5355
+  - 🇻🇳VN-103.186.154.212-5209
+  - MD-213.159.66.206-0277 | 15.157MB
+  - 🇻🇳VN-103.186.155.114-5338
+  - '[Hysteria2] 🇯🇵 日本东京5hy2|CT|CU|'
+  - 🇳🇱NL-193.29.139.251-0370
+  - 🇻🇳VN-103.186.154.229-5210
+  - '[Hysteria2] 🇸🇬 新加坡4|高速专线|hy2'
+  - '[Trojan] 未知 TROJAN-614 | free-nodes-kF4E'
+  - '[Hysteria2] 🇯🇵 日本东京7hy2|CT|CU|'
+  - 🇮🇳IN-134.209.147.198-0404
+  - 🇻🇳VN-103.186.154.68-5173
+  - 🇸🇬 新加坡|@stairnode-KSyI
+  - '[Hysteria2] 🇸🇬 新加坡3|高速专线|hy2'
+  - 🇻🇳VN-103.186.154.65-5171
+  - '[Vless] 🇸🇬 新加坡01|高速专线'
+  - '[SS] 未知 SS-10 | free-nodes'
+  - '[Vless] 🇰🇷 韩国首尔01'
+  - 🇸🇬 新加坡2|@stairnode
+  - '[Hysteria2] 🇰🇷 韩国|高速专线|hy2'
+  - 🇻🇳VN-103.186.154.54-5170
+  - 🇺🇸_US_美国_1
+  - '[Hysteria2] 🇦🇪 迪拜|高速专线|hy2'
+  - 🇻🇳VN-103.186.154.45-5167
+  - 🇻🇳VN-103.186.154.176-5187
+  - 🇸🇬SG-167.150.100.115-0304 | 5.572MB
+  - 🇻🇳VN-103.186.154.218-5309
+  - '[Trojan] 未知 TROJAN-1774 | free-nodes'
+  - 🇻🇳VN-103.186.155.202-5371
+  - 🇻🇳VN-103.186.154.195-5190
+  - 🇻🇳VN-103.186.154.204-5197
+  - '[Hysteria2] 🇯🇵 日本东京2hy2|CM|CU|'
+  - '[Trojan] 未知 TROJAN-1344 | free-nodes-lZ9X'
+  - 🇬🇧GB-82.38.31.191-0242 | 28.64MB
+  - '[SS] 🇬🇧 GB SS-11 | free-nodes'
+  - 🇸🇨SC-156.238.238.194-5117
+  - 🇺🇸 美国|@stairnode-Ac6d
+  - 🇻🇳VN-103.186.154.228-5381
+  - 🇺🇸 美国2|@stairnode
+  - '[Vless] 🇯🇵 日本东京4|CM|CU|'
+  - 🇺🇸 美国2|@stairnode-0Kbb
+  - 🇻🇳VN-103.186.154.177-5194
+  - '[Vless] 🇯🇵 日本东京3|CM|CU|'
+  - 🇻🇳VN-103.186.154.149-5134
+  - '[Vless] 🇮🇳 印度|01|0.1倍'
+  - '[Vless] 🇯🇵 日本东京2|CM|CU|'
+  - '[Vless] 🇯🇵 日本东京|11|CT|CU|0.1倍'
+  - 🇭🇰 香港4|@stairnode-1omu
+  - 🇺🇸US-149.30.232.103-5118
+  - 🇻🇳VN-103.186.154.71-5367
+  - 🇨🇦CA-23.95.76.59-0353 | 8.281MB
+  - 🇻🇳VN-103.186.155.102-5334
+  - 🇻🇳VN-103.186.154.77-5316
+  - 🇻🇳VN-103.186.154.231-5311
+  - 🇺🇸US-149.30.232.103-5116
   - 🇭🇰HK-203.23.128.33-0408
+  - 🇺🇸US-149.30.232.103-5115
+  - 🇻🇳VN-103.186.154.73-5185
+  - 🇻🇳VN-103.186.154.75-5182
+  - '[Vless] 🇸🇬 AWS新加坡01|CM|CU|'
+  - '[Vless] 🇸🇬 AWS新加坡02|CM|CU|'
+  - 🇬🇧GB-82.38.31.179-0356
+  - '[Vless] 🇸🇬 AWS新加坡03|CM|CU|'
+  - 🇺🇸_US_美国
+  - 🇪🇬EG-38.54.59.180-0358
+  - 🇫🇷_FR_法国
+  - 🇫🇷_FR_法国_1
+  - 🇺🇸 美国|@stairnode
+  - PK-156.59.243.6-0283 | 13.705MB
+  - '[Trojan] 未知 TROJAN-1659 | free-nodes'
+  - 🇱🇹LT-45.158.171.66-0381
+  - RO-185.126.237.38-0289 | 8.583MB
+  - 🇻🇳VN-103.186.155.30-5128
+  - 152.67.192.242_Gemini_Claude
+  - 🇻🇳VN-103.186.155.203-5385
   - US美国(mibei77.com 米贝节点分享) 4
-  - '[Trojan] 未知 TROJAN-498 | free-nodes'
-  - '[Vless] 未知 VLESS-06 | free-nodes'
-  - 🇬🇧GB-82.38.31.202-0340
+  - 🇷🇴_罗马尼亚
+  - 🇳🇱NL-193.29.139.240-0371
+  - 🇻🇳VN-103.186.155.147-5255
+  - '[Vless] 🇺🇸 US VLESS-113 | free-nodes'
+  - MD-213.159.67.124-5094 | 20.182MB
+  - 🇱🇹LT-45.158.171.70-0362
+  - KZ-45.159.250.190-0369 | 2.333MB
+  - 🇳🇱NL-141.98.4.67-0418
+  - 🇯🇵JP-153.121.51.29-4966 | 4.358MB
+  - 🇱🇹LT-45.87.175.35-0366
+  - 🇭🇰 香港5|@stairnode-VaVn
+  - 🇻🇳VN-103.186.154.157-5261
+  - '[Hysteria2] 🇭🇰 香港01|CM|CU|'
+  - 🇬🇧GB-82.38.31.199-0328
+  - 🇱🇹LT-45.87.175.187-0318
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
